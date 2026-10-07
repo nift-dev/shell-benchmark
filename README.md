@@ -93,3 +93,13 @@ Status: harness under validation; no local smoke timings are official results.
 
 Use --state application-cold to regenerate HOME/XDG and synthetic RC before
 every invocation, outside timing. This resets application files, not OS caches.
+
+Function/string work defines a callable and performs native uppercase/replacement.
+File and capture rows are deliberately small, so startup contributes substantially.
+Traversal is covered in the scripting suite's recursive fixture; SQLite/structured
+runtime work belongs there too. Parallel job control was investigated but is not
+in the first timed matrix: Nift's REPL job table, Nu jobs/closures and POSIX async
+lists require separate completion/state oracles before they are comparable.
+Repeated long pipeline and concurrent-job distributions remain an expansion gap;
+the current process row launches 100 children serially and the pipeline row two.
+This is a bounded suite, not comprehensive interactive-shell feature coverage.

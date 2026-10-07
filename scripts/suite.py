@@ -88,4 +88,10 @@ def workloads(shell):
     fileio='/usr/bin/printf payload > roundtrip.txt; /usr/bin/cat roundtrip.txt'
     if shell=='nu': fileio='^/usr/bin/printf payload | save -f roundtrip.txt; ^/usr/bin/cat roundtrip.txt'
     if shell=='nift': fileio='r := run("/usr/bin/printf", "payload"); f := file("roundtrip.txt"); f.open("w"); f.write(r.stdout); f.save(); f.close(); r = run("/usr/bin/cat", "roundtrip.txt"); print(r.stdout)'
-    return [('command-capture',capture[shell],b'capture'),('file-roundtrip',fileio,b'payload'),('native-sum',loops[shell],b'500500'),('external-100',external[shell],b'100'),('short-pipeline',pipeline,b'ABC')]
+    function_string={
+      'bash':'bench_upper() { local s=$1; s=${s^^}; printf "%s\\n" "${s//A/a}"; }; bench_upper alpha',
+      'zsh':'bench_upper() { local s=$1; s=${(U)s}; print -r -- "${s//A/a}"; }; bench_upper alpha',
+      'fish':'function bench_upper; string upper $argv | string replace -a A a; end; bench_upper alpha',
+      'nu':'def bench_upper [s: string] { $s | str upcase | str replace -a "A" "a" }; print (bench_upper "alpha")',
+      'nift':'fn(bench_upper(s)) { return s.to_upper().replace("A", "a") }; print(bench_upper("alpha"))'}
+    return [('function-string',function_string[shell],b'aLPHa'),('command-capture',capture[shell],b'capture'),('file-roundtrip',fileio,b'payload'),('native-sum',loops[shell],b'500500'),('external-100',external[shell],b'100'),('short-pipeline',pipeline,b'ABC')]
