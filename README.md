@@ -90,7 +90,8 @@ Percentiles use linear interpolation and are descriptive, not confidence bounds.
 - Nift src/CLI.cpp, run_script_shell_loop and command dispatcher at the recorded
   Nift source revision; the measured release must pass independent probes.
 
-Status: harness under validation; no local smoke timings are official results.
+The Labs report links the official campaign evidence and records each measured
+source revision. Local smoke timings are never official results.
 
 Use --state application-cold to regenerate HOME/XDG and synthetic RC before
 every invocation, outside timing. This resets application files, not OS caches.
@@ -133,3 +134,18 @@ source/parse/execute measurements per level, excluding system RC. These use
 EPOCHREALTIME wall clocks and are diagnostics with clock/read overhead, not
 intrinsic-startup measurements. Other shells lack an equivalent independently
 parsed timer boundary here; no forced cross-shell RC-body ranking is published.
+
+## Disposable-node provisioning
+
+`scripts/provision-tools.sh` targets a dedicated Ubuntu 24.04 node, as root.
+Clone the three suites into `/opt/campaign`, download and inspect the official
+`https://nift.dev/install` installer as `/opt/campaign/nift-installer.sh`, and run
+the provisioning script before collecting anything. The campaign evidence
+retains the exact installer and its checksum, distro package versions, compiler
+version and download checksums. Prefer that archived installer when reproducing
+the recorded campaign. `npm ci` uses the committed website lockfile. Never run
+provisioning on a personal workstation; it changes system packages/services.
+
+Pin each campaign command to one logical CPU with `taskset -c 0`. Acquire all
+fixtures and tools before measuring. The public teardown record verifies the
+disposable instance was removed; it deliberately omits address and credentials.
