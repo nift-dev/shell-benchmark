@@ -74,6 +74,8 @@ must disclose this difference from a terminal pipeline.
 Fish uses native test/math in while loops. Command capture and file roundtrip
 are separate rows. Nu uses its native save and Nift its native file API; these
 file-write architecture differences are disclosed rather than forced through sh.
+All five file-roundtrip cases execute the same absolute printf/cat helpers; this
+is a mixed orchestration/I/O workflow, not pure native file-read throughput.
 
 Every sample must pass an output/exit oracle. A failed run retains non-publishable
 raw evidence and cannot yield summary tables. Samples are interleaved with
