@@ -125,3 +125,11 @@ process launches and 50 minimal PTY launches with small versus 128 MiB Python
 heaps. This reports the measurement floor and tests heap independence. Never
 subtract these timings from headline observations. The exact probe C source and
 raw calibration samples are retained for scrutiny.
+
+`verify_rc.py` additionally certifies **every** synthetic variable/function, the
+conditional and PATH prefix across 18 light/moderate login/non-login cases.
+`diagnose_rc.py` records 50 independently native-clocked Bash/Zsh synthetic RC
+source/parse/execute measurements per level, excluding system RC. These use
+EPOCHREALTIME wall clocks and are diagnostics with clock/read overhead, not
+intrinsic-startup measurements. Other shells lack an equivalent independently
+parsed timer boundary here; no forced cross-shell RC-body ranking is published.
