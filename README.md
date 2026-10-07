@@ -119,3 +119,9 @@ behaviour, not a reason to suppress system RC or hide the result. Its expensive
 startup means the fresh-state series uses 30 measured samples per startup cell;
 prepared state uses 100. This sampling policy is frozen before corrected runs.
 No already-collected corrected observations are removed.
+
+`scripts/calibrate.py --output results/calibration.json` retains 50 minimal
+process launches and 50 minimal PTY launches with small versus 128 MiB Python
+heaps. This reports the measurement floor and tests heap independence. Never
+subtract these timings from headline observations. The exact probe C source and
+raw calibration samples are retained for scrutiny.
