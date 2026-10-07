@@ -18,9 +18,10 @@ Do not compare it to the old website suite's sampled aggregate RSS.
 ## Startup boundaries
 
 - Immediate exit and trivial command: non-interactive bare command evaluation.
-- Interactive ready: controlling PTY, timestamp before PTY fork/exec until first
+- Interactive ready: controlling PTY, compiled forkpty start timestamp through pipe receipt of the first
   prompt. An RC-state command runs afterwards and must yield the expected line.
-  This metric includes Python PTY launch and terminal emulation overhead; it is
+  This metric excludes Python fork and bridge launch, but includes terminal query
+response and pipe-forwarding overhead; it is
   not directly subtractable from the C-supervised invocation metric.
 - Login is separate for Bash/Zsh/Fish/Nu. Nift has no separate login mode.
 - Every invocation is a fresh process. Repeated prepared HOME/XDG state is reused
@@ -31,7 +32,7 @@ queries. It detects OSC 133 prompt completion where available, otherwise the
 shell's prompt suffix. Terminal query handling affects interactive timing;
 results concern this documented terminal model. Configuration or shell changes
 which break the oracle stop the run. No arbitrary sleeps determine readiness.
-PTY RSS is omitted because fork inherits Python high-water memory. Process-mode
+PTY RSS is omitted because prompt timing ends before oracle/teardown accounting. Process-mode
 RSS remains available; the post-prompt correctness probe is outside latency.
 
 ## RC matrix
@@ -103,3 +104,18 @@ lists require separate completion/state oracles before they are comparable.
 Repeated long pipeline and concurrent-job distributions remain an expansion gap;
 the current process row launches 100 children serially and the pipeline row two.
 This is a bounded suite, not comprehensive interactive-shell feature coverage.
+
+## Measurement revision 2
+
+The growing Python result heap contaminated initial PTY fork latency. Retain the
+original prepared/fresh-home series under diagnostic-python-pty; never quote it
+as intrinsic startup. A compiled forkpty bridge now reports CLOCK_MONOTONIC
+launch timestamps; the Python reader uses the same clock at first prompt receipt.
+Bridge/Python launch is excluded; terminal response/forwarding remains included.
+
+Fresh configured Zsh invokes Ubuntu system compinit and rebuilds a completion
+cache on every regenerated HOME. This is intentionally retained normal-path
+behaviour, not a reason to suppress system RC or hide the result. Its expensive
+startup means the fresh-state series uses 30 measured samples per startup cell;
+prepared state uses 100. This sampling policy is frozen before corrected runs.
+No already-collected corrected observations are removed.

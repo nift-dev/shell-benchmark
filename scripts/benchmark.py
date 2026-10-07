@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
-import argparse,errno,hashlib,json,os,pty,re,select,shutil,signal,tempfile,time
+import argparse,errno,hashlib,json,os,re,select,shutil,signal,subprocess,tempfile,time
 from pathlib import Path
 from campaign_measure import measure,isolated_env,metadata,identity,summary
 from suite import SHELLS,SCENARIOS,prepare,invocation,rc_oracle,workloads
 ROOT=Path(__file__).resolve().parents[1]
+PTY_DIR=tempfile.TemporaryDirectory(prefix='pty-supervisor-')
+PTY_EXE=str(Path(PTY_DIR.name)/'measure-pty')
+subprocess.run(['cc','-O2','-Wall','-Wextra',str(Path(__file__).with_name('measure_pty.c')),'-lutil','-o',PTY_EXE],check=True)
 ANSI=re.compile(rb'\x1b\[[0-?]*[ -/]*[@-~]|\x1b\][^\x07\x1b]*(?:\x07|\x1b\\)|\x1b[78=>]')
 
 
 def interactive(cmd,cwd,env,code,expected,timeout=15):
-    # Real controlling terminal. Timestamp before fork/exec; stop on first
-    # recognizable prompt, then prove that commands and RC state are usable.
-    start=time.perf_counter_ns(); pid,fd=pty.fork()
-    if pid==0:
-        os.chdir(cwd); os.execve(cmd[0],cmd,env)
+    # Compiled forkpty bridge: shell launch is independent of Python's growing
+    # heap. Both clocks are Linux CLOCK_MONOTONIC; pipe receipt is the endpoint.
+    report_dir=tempfile.TemporaryDirectory(prefix='pty-report-')
+    report=Path(report_dir.name)/'start.json'
+    proc=subprocess.Popen([PTY_EXE,str(report),*cmd],cwd=cwd,env=env,
+                          stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+    fd=proc.stdout.fileno()
+    start=None
     deadline=time.monotonic()+timeout; data=b''; ready=None; checked=False
     marker=b'BENCH_COMMAND_DONE'
     try:
@@ -26,14 +32,16 @@ def interactive(cmd,cwd,env,code,expected,timeout=15):
             # Emulate the minimal xterm capabilities queried by modern Fish/Nu.
             # These replies are harness work; document PTY terminal model.
             for query,reply in ((b'\x1b[0c',b'\x1b[?1;2c'),(b'\x1b[c',b'\x1b[?1;2c'),(b'\x1b[6n',b'\x1b[1;1R'),(b'\x1b]11;?',b'\x1b]11;rgb:0000/0000/0000\x1b\\')):
-                if query in chunk: os.write(fd,reply)
+                if query in chunk: os.write(proc.stdin.fileno(),reply)
+            if start is None:
+                start=json.loads(report.read_text())['start_ns']
             data+=chunk
             plain=ANSI.sub(b'',data).rstrip(b'\r\n ')
 
             if ready is None and (b'\x1b]133;B' in chunk or re.search(rb'(?:\$|#|%|>|\xe2\x9d\xaf) *$',plain)):
                 ready=(time.perf_counter_ns()-start)/1e6
                 # PTY echoes typed input: match actual result line independently.
-                os.write(fd,(code+'\n').encode()); data=b''
+                os.write(proc.stdin.fileno(),(code+'\n').encode()); data=b''
             elif ready is not None:
                 lines=ANSI.sub(b'',data).replace(b'\r',b'').split(b'\n')
                 if expected in [line.strip() for line in lines]:
@@ -41,17 +49,17 @@ def interactive(cmd,cwd,env,code,expected,timeout=15):
         if not checked: raise RuntimeError('interactive prompt/RC oracle failed: '+cmd[0]+' '+repr(data[-500:]))
         # Kill after validation. Startup latency ends at prompt; teardown and
         # oracle command execution are outside that metric.
-        os.kill(pid,signal.SIGKILL)
-        _,status,usage=os.wait4(pid,0)
+        proc.terminate(); proc.wait(timeout=5)
         return dict(wall_ms=ready,peak_rss_kib=None,correct=True,
-                    metric='first-prompt-ready',exit_code=None,
-                    teardown='SIGKILL after post-prompt correctness oracle; RSS omitted: PTY fork inherits Python memory high-water')
+                    metric='compiled-forkpty-to-first-prompt',exit_code=None,
+                    teardown='SIGTERM bridge kills child process group after oracle; RSS omitted')
     finally:
-        try: os.kill(pid,signal.SIGKILL)
-        except ProcessLookupError: pass
-        try: os.waitpid(pid,0)
-        except ChildProcessError: pass
-        os.close(fd)
+        if proc.poll() is None:
+            proc.terminate()
+            try: proc.wait(timeout=5)
+            except subprocess.TimeoutExpired: proc.kill();proc.wait()
+        proc.stdin.close();proc.stdout.close();proc.stderr.close()
+        report_dir.cleanup()
 
 
 def main():
@@ -85,7 +93,7 @@ def main():
             for name,code,expected in workloads(shell):
                 jobs.append(dict(id=f'{shell}/bare/{name}',shell=shell,scenario='bare',
                                  command=invocation(exe,shell,'bare',code=code),expected=expected,samples=[],work=True))
-    result=dict(schema=1,machine=metadata(ROOT),tools=tools,jobs=[],publishable=False,
+    result=dict(schema=2,machine=metadata(ROOT),tools=tools,jobs=[],publishable=False,
                 policy='fresh processes; allowlisted environment; isolated HOME/XDG; OS caches uncontrolled',
                 samples=a.samples,work_samples=a.work_samples,warmups=a.warmups,state=a.state)
     dest=Path(a.output); dest.parent.mkdir(parents=True,exist_ok=True)
