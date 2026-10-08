@@ -122,6 +122,7 @@ def main():
   for c in definitions:
    code=source(c,shell)
    implementation=('native filesystem API' if shell in ('nift','nu') else 'shell redirection' if c['operation'].startswith('create') else 'common find → xargs/wc → awk pipeline' if c['operation']=='report' else 'batched GNU utilities') if c['category'] in ('filesystem','real-world') else ('native shell code' if c['classification']=='runtime-native' else 'common external utilities')
+   if c['operation']=='report':implementation='common find → xargs/wc → awk pipeline'
    jobs.append(dict(id=c['id']+'/'+shell,shell=shell,case=c['id'],definition=c,implementation=implementation,source=code,source_sha256=digest(code.encode()),oracle_sha256=digest(expected(c)),samples=[]))
  # Direct common external baselines: same fixtures and oracles, no shell launch.
  for c in definitions:
@@ -149,7 +150,7 @@ def main():
      assert rec['exit_code']==0 and not rec['timeout'],repr(err[:400])
      fixture_key=c['shape']+'/'+str(c['count'])
      if fixture[0] and fixture_key not in result['fixtures']:
-      result['fixtures'][fixture_key]={'targets':fixture[0],'distractors':fixture[1],'payload_sha256':digest(PAYLOAD.encode()),'distractor_sha256':digest(KEEP.encode())}
+      result['fixtures'][fixture_key]={'targets':fixture[0],'distractors':fixture[1],'content_recipes':{k:{'bytes':len(v),'sha256':digest(v)} for k,v in {'small-target':PAYLOAD.encode(),'empty-target':b'','keeper':KEEP.encode(),'source.py':b'x = 1\n'*16,'source.cc':b'int x;\n'*16,'source.md':b'# Note\n'*16}.items()}}
      j['fixture_identity']={'key':fixture_key,'shape':c['shape'],'manifest_sha256':digest('\n'.join(fixture[0]).encode())}
      assert j['shell']!='external-baseline' or out.strip()==b'', 'baseline unexpected stdout'
      validation=verify(root,c,fixture,b'OK' if j['shell']=='external-baseline' else out);rec['validation']=validation;rec['correct']=True
