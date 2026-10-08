@@ -41,7 +41,7 @@ def prepare(root,c):
   p=safe(root,rel);p.parent.mkdir(parents=True,exist_ok=True)
   data=content(c,rel)
   if rel in keeper_set or c['operation'] not in ('create-empty','create-small'):p.write_bytes(data)
-  if rel in keeper_set:
+  if rel in keeper_set or c['operation'] in ('copy','concat','metadata','traverse','report'):
    st=p.stat();checks[rel]=(digest(data),st.st_mode,st.st_mtime_ns,st.st_ino)
  (root/'targets.txt').write_text('\n'.join(targets)+'\n' if targets else '')
  (root/'targets.nul').write_bytes(b''.join(p.encode()+b'\0' for p in targets))
@@ -99,6 +99,8 @@ def verify(root,c,fixture,out):
   else:
    assert p.is_file(),'target missing'
    assert p.read_bytes()==(b'' if op=='create-empty' else content(c,rel)),'target content differs'
+   if op in ('copy','concat','metadata','traverse','report'):
+    st=p.stat();assert (digest(p.read_bytes()),st.st_mode,st.st_mtime_ns,st.st_ino)==checks[rel], 'source metadata changed'
   if op in ('copy','move'):
    q=root/('copied' if op=='copy' else 'moved')/p.name;assert q.read_bytes()==PAYLOAD.encode()
  observed={str(p.relative_to(root)) for p in (root/'files').rglob('*') if p.is_file()} if (root/'files').exists() else set()
@@ -131,7 +133,7 @@ def main():
   if c['operation']=='concat':continue # output redirection requires a shell; don't mislabel it direct.
   command=['/usr/bin/xargs','-0','-a','targets.nul',exe]+(['-t','copied' if c['operation']=='copy' else 'moved'] if c['operation']!='delete' else [])+['--']
   jobs.append(dict(id=c['id']+'/external-baseline',shell='external-baseline',case=c['id'],definition=c,implementation='direct GNU xargs + '+exe,command=command,source_sha256=digest(json.dumps(command).encode()),oracle_sha256=digest(b''),samples=[]))
- result={'schema':1,'kind':'shell-workloads','machine':metadata(ROOT),'tools':tools,'external_tools':{x:identity('/usr/bin/'+x,['-W','version'] if x=='awk' else ['--version']) for x in ('xargs','rm','cp','mv','cat','find','stat','awk','grep','sort','uniq','true')},'policy':'fresh fixture per sample; OS caches uncontrolled; C-supervised fork/exec-to-exit; all oracles outside timing; rotated case/participant order; every observation retained','smoke':a.smoke,'definitions':definitions,'fixtures':{},'exclusions':[{'case':c['id'],'shell':s,'reason':'no native filesystem deletion API; end-to-end batched GNU rm result is published instead'} for c in definitions if c['operation']=='delete' for s in ('bash','zsh','fish')],'jobs':jobs,'publishable':False}
+ result={'schema':1,'kind':'shell-workloads','machine':metadata(ROOT),'tools':tools,'external_tools':{x:identity('/usr/bin/'+x,['-W','version'] if x=='awk' else ['--version']) for x in ('xargs','rm','cp','mv','cat','find','stat','awk','grep','sort','uniq','true')},'policy':'fresh fixture per sample; OS caches uncontrolled; C-supervised fork/exec-to-exit; all oracles outside timing; rotated case/participant order; every observation retained','smoke':a.smoke,'oracle_implementation_sha256':digest(Path(__file__).read_bytes()),'definitions':definitions,'fixtures':{},'exclusions':[{'case':c['id'],'shell':s,'reason':'no native filesystem deletion API; end-to-end batched GNU rm result is published instead'} for c in definitions if c['operation']=='delete' for s in ('bash','zsh','fish')],'jobs':jobs,'publishable':False}
  if not a.smoke and result['machine']['dirty']:raise RuntimeError('official workloads require a clean suite checkout')
  dest=Path(a.output);dest.parent.mkdir(parents=True,exist_ok=True)
  def save():dest.write_text(json.dumps(result,indent=2)+'\n')

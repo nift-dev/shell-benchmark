@@ -28,6 +28,14 @@ class WorkloadOracles(unittest.TestCase):
    verify(root,c,fixture,b'OK')
    (root/'copied'/Path(fixture[0][0]).name).write_bytes(b'bad')
    with self.assertRaises(AssertionError):verify(root,c,fixture,b'OK')
+ def test_copy_rejects_source_metadata_changes(self):
+  import os
+  c={**next(x for x in cases() if x['operation']=='copy'),'count':12}
+  with tempfile.TemporaryDirectory() as td:
+   root=Path(td);fixture=prepare(root,c)
+   for rel in fixture[0]:(root/'copied'/Path(rel).name).write_bytes(PAYLOAD.encode())
+   safe(root,fixture[0][0]).chmod(0o400)
+   with self.assertRaises(AssertionError):verify(root,c,fixture,b'OK')
  def test_creation_rejects_unexpected_path(self):
   c={**next(x for x in cases() if x['operation']=='create-empty'),'count':12}
   with tempfile.TemporaryDirectory() as td:
