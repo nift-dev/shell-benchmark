@@ -114,6 +114,14 @@ def verify(root,c,fixture,out):
   assert all(p.read_bytes()==PAYLOAD.encode() for p in (root/'report').glob('result-*.txt'))
  return {'targets':len(targets),'distractors':len(keepers),'unexpected_survivors':0,'unexpected_deletions':0,'all_distractor_content_metadata_unchanged':True,'manifest_sha256':digest('\n'.join(targets).encode()),'oracle':'all paths and bytes checked; keeper mode/mtime/inode checked'}
 
+def schedule(jobs,turn):
+ groups={}
+ for j in jobs:groups.setdefault(j['case'],[]).append(j)
+ keys=list(groups);offset=turn%len(keys);ordered=[]
+ for key in keys[offset:]+keys[:offset]:
+  group=groups[key];start=turn%len(group);ordered.extend(group[start:]+group[:start])
+ return ordered
+
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--nift',required=True);ap.add_argument('--output',required=True);ap.add_argument('--shells',default=','.join(SHELLS));ap.add_argument('--cases');ap.add_argument('--smoke',action='store_true');ap.add_argument('--timeout',type=float,default=180);a=ap.parse_args()
  definitions=[c for c in cases() if not a.cases or c['id'] in a.cases.split(',')];jobs=[];tools={}
@@ -139,7 +147,7 @@ def main():
  def save():dest.write_text(json.dumps(result,indent=2)+'\n')
  rounds=1 if a.smoke else max(c['samples']+c['warmups'] for c in definitions)
  for turn in range(rounds):
-  for j in jobs[turn%len(jobs):]+jobs[:turn%len(jobs)]:
+  for j in schedule(jobs,turn):
    c=j['definition']
    if not a.smoke and turn>=c['samples']+c['warmups']:continue
    with tempfile.TemporaryDirectory(prefix='shell-workload-') as td:

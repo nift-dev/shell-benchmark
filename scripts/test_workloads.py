@@ -49,6 +49,13 @@ class WorkloadOracles(unittest.TestCase):
   targets,keepers=paths(c)
   self.assertEqual({str(Path(x).parent) for x in targets},{str(Path(x).parent) for x in keepers})
   self.assertEqual(len({str(Path(x).parent) for x in targets}),100)
+ def test_participant_and_case_rotation(self):
+  from workload_campaign import schedule
+  jobs=[{'case':c,'shell':s} for s in ('bash','zsh','fish','nu','nift') for c in ('one','two')]
+  first=[schedule(jobs,i)[0] for i in range(5)]
+  self.assertEqual({j['shell'] for j in first},{'bash','zsh','fish','nu','nift'})
+  self.assertEqual(first[0]['case'],'one');self.assertEqual(first[1]['case'],'two')
+  for i in range(5):self.assertEqual(len(schedule(jobs,i)),len(jobs))
  def test_timeout_kills_process_group(self):
   from campaign_measure import measure,isolated_env
   with tempfile.TemporaryDirectory() as td:
