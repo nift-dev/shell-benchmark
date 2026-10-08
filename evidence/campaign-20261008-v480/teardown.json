@@ -1,5 +1,12 @@
 {
-  "status": "Awaiting verified live publication before deletion",
-  "scope": "Only this newly provisioned campaign node; unrelated nodes untouched",
-  "label": "nift-shell-20261008-v480"
+  "label": "nift-shell-20261008-v480",
+  "type": "g6-standard-4",
+  "region": "us-east",
+  "image": "linode/ubuntu24.04",
+  "created": "2026-10-08T07:16:27",
+  "instance_identity_sha256": "f7879ada05b222d0918bdc75df58af19cbe489097776224480b35610ca0bff80",
+  "verification_http_status": 404,
+  "deleted_verified_utc": "2026-10-08T07:58:41.588645+00:00",
+  "provisioned_with": "linode-cli",
+  "backups_enabled": false
 }
