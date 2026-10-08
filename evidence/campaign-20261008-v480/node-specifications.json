@@ -1,0 +1,14 @@
+{
+  "label": "nift-shell-20261008-v480",
+  "type": "g6-standard-4",
+  "region": "us-east",
+  "image": "linode/ubuntu24.04",
+  "created": "2026-10-08T07:16:27",
+  "specs": {
+    "disk": 163840,
+    "memory": 8192,
+    "vcpus": 4,
+    "gpus": 0,
+    "transfer": 5000
+  }
+}

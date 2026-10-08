@@ -1,0 +1,69 @@
+{
+  "series": "20261008-v480",
+  "date_local": "2026-10-08",
+  "timezone": "Australia/Melbourne",
+  "measured_revisions": {
+    "nift": "c80c2cd6f4a2e782e861431637af014bb8a0668c",
+    "shell-benchmark": "e79253d24fd9c74ccc8616186a0a1cd2bbf7e726",
+    "scripting-benchmark": "4c648ef761423a20173f6095691955dc4040ce53",
+    "lab": "e906f92428285ea6ea25bfa05092f2111fa82133"
+  },
+  "nift_version": "4.8.0 development snapshot",
+  "scripting_families": [
+    "sanity/noop",
+    "sanity/output",
+    "sanity/loops",
+    "sanity/function-calls",
+    "arrays-strings-hash/scan",
+    "arrays-strings-hash/frequency-count",
+    "arrays-strings-hash/sliding-window",
+    "arrays-strings-hash/sort-index",
+    "arrays-strings-hash/map-set",
+    "dynamic-programming/fibonacci",
+    "graphs-trees-search/bfs",
+    "structured-data/json-parse",
+    "structured-data/json-transform",
+    "structured-data/json-traverse",
+    "filesystem/traverse"
+  ],
+  "scripting_jobs": 188,
+  "samples": {
+    "shell_prepared": 100,
+    "shell_fresh_home": 30,
+    "shell_work": 10,
+    "shell_warmups": 3,
+    "scripting": 10,
+    "scripting_warmups": 2
+  },
+  "preflight": [
+    "All source/golden files exist for frozen 188 scripting jobs",
+    "All scripting source hashes unchanged from previous official series",
+    "Shell invocation/configuration/workload/timing source unchanged; RC certification and diagnostic additions retained",
+    "Both measurement helper suites: three tests passed",
+    "Scripting definition/public schema checks passed"
+  ],
+  "infrastructure": "Two new g6-standard-4/us-east Ubuntu 24.04 nodes, authorized after prior prepared nodes were unavailable; provisioned through Linode CLI; unrelated existing nodes untouched",
+  "teardown_policy": "Delete only the two new campaign nodes after verified publication",
+  "publication_policy": "Preserve old raw series and existing designs; no source changes to Nift; no pooling old/new or cross-node percentage claims",
+  "suite": "shell",
+  "node": {
+    "label": "nift-shell-20261008-v480",
+    "type": "g6-standard-4",
+    "region": "us-east",
+    "image": "linode/ubuntu24.04",
+    "created": "2026-10-08T07:16:27",
+    "specs": {
+      "disk": 163840,
+      "memory": 8192,
+      "vcpus": 4,
+      "gpus": 0,
+      "transfer": 5000
+    }
+  },
+  "nift_binary_sha256": "962c6a187c31ac21311cda7a2e248b2438a1a06521dff9c284a76098b21e342c",
+  "official_started_utc": "2026-10-08T07:33:30Z",
+  "official_ended_utc": "2026-10-08T07:38:31Z",
+  "build_command": "make -j2; make install PREFIX=/opt/campaign/tools",
+  "build_flags": "Native Make defaults: C++17 -O2 -Wall -Wextra -pedantic -pthread; C99 -O2; vendored static libffi; system libdl",
+  "clean_checkouts": "Both full official and smoke raw files record machine.dirty=false and exact frozen suite revision; three measurement-helper tests pass before and after measurement."
+}

@@ -151,3 +151,7 @@ provisioning on a personal workstation; it changes system packages/services.
 Pin each campaign command to one logical CPU with `taskset -c 0`. Acquire all
 fixtures and tools before measuring. The public teardown record verifies the
 disposable instance was removed; it deliberately omits address and credentials.
+
+## Official rerun: 8 October 2026
+
+The `20261008-v480` series measures the Nift 4.8.0 development snapshot from frozen source, with the previous workload definitions and runtime pins. See [dated raw evidence and reproduction commands](evidence/campaign-20261008-v480/README.md) and [run identity](evidence/campaign-20261008-v480/run-identity.json). Source-built Nift provenance, complete smoke/official observations, independent summaries and node lifecycle verification are retained separately from the previous 4.7.2 series. The current Labs report links each dated run rather than pooling historical observations.

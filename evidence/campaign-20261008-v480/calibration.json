@@ -1,0 +1,1515 @@
+{
+  "machine": {
+    "kernel": "6.8.0-134-generic",
+    "os_release": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+    "cpuinfo": "processor\t: 0\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7542 32-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2899.998\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 0\ncpu cores\t: 4\napicid\t\t: 0\ninitial apicid\t: 0\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 5799.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 1\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7542 32-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2899.998\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 1\ncpu cores\t: 4\napicid\t\t: 1\ninitial apicid\t: 1\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 5799.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 2\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7542 32-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2899.998\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 2\ncpu cores\t: 4\napicid\t\t: 2\ninitial apicid\t: 2\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 5799.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 3\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7542 32-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2899.998\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 3\ncpu cores\t: 4\napicid\t\t: 3\ninitial apicid\t: 3\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 5799.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\n",
+    "meminfo": "MemTotal:        8131780 kB\nMemFree:         6325668 kB\nMemAvailable:    7617692 kB\nBuffers:           47900 kB\nCached:          1424292 kB\nSwapCached:            0 kB\nActive:           209340 kB\nInactive:        1301764 kB\nActive(anon):      39892 kB\nInactive(anon):        0 kB\nActive(file):     169448 kB\nInactive(file):  1301764 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               300 kB\nWriteback:             0 kB\nAnonPages:         39008 kB\nMapped:            46484 kB\nShmem:               972 kB\nKReclaimable:      91892 kB\nSlab:             148648 kB\nSReclaimable:      91892 kB\nSUnreclaim:        56756 kB\nKernelStack:        2340 kB\nPageTables:         2040 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573788 kB\nCommitted_AS:     152092 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16420 kB\nVmallocChunk:          0 kB\nPercpu:             2144 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      110452 kB\nDirectMap2M:     3035136 kB\nDirectMap1G:     7340032 kB\n",
+    "cpu_affinity": [
+      0
+    ],
+    "python": "3.12.3",
+    "revision": "e79253d24fd9c74ccc8616186a0a1cd2bbf7e726",
+    "dirty": false,
+    "cache_policy": "OS caches uncontrolled; no machine-cold claim",
+    "rss_policy": "Linux wait4 waited-child high-water RSS; not aggregate process-tree RSS"
+  },
+  "policy": "Calibration is disclosed, never subtracted from shell results.",
+  "source": "#include <stdio.h>\nint main(void){char s[4096];printf(\"$ \");fflush(stdout);while(fgets(s,sizeof(s),stdin)){puts(\"RC_OK\");fflush(stdout);}return 0;}\n",
+  "jobs": [
+    {
+      "id": "process-floor",
+      "samples": [
+        {
+          "wall_ms": 0.764491,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.612,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 0
+        },
+        {
+          "wall_ms": 0.719462,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.591,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 1
+        },
+        {
+          "wall_ms": 0.767083,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.639,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 2
+        },
+        {
+          "wall_ms": 0.71583,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.588,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 3
+        },
+        {
+          "wall_ms": 0.729231,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.599,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 4
+        },
+        {
+          "wall_ms": 0.708111,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.569,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 5
+        },
+        {
+          "wall_ms": 0.750472,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.577,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 6
+        },
+        {
+          "wall_ms": 0.698401,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.572,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 7
+        },
+        {
+          "wall_ms": 0.695251,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.57,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 8
+        },
+        {
+          "wall_ms": 0.707761,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.58,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 9
+        },
+        {
+          "wall_ms": 0.715971,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.59,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 10
+        },
+        {
+          "wall_ms": 0.700101,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.576,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 11
+        },
+        {
+          "wall_ms": 0.802513,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.596,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 12
+        },
+        {
+          "wall_ms": 0.699851,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.578,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 13
+        },
+        {
+          "wall_ms": 0.797972,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.64,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 14
+        },
+        {
+          "wall_ms": 0.707722,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.585,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 15
+        },
+        {
+          "wall_ms": 0.844064,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.649,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 16
+        },
+        {
+          "wall_ms": 0.71256,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.586,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 17
+        },
+        {
+          "wall_ms": 0.831814,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.644,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 18
+        },
+        {
+          "wall_ms": 0.715561,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.588,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 19
+        },
+        {
+          "wall_ms": 0.833453,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.646,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 20
+        },
+        {
+          "wall_ms": 0.709592,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.585,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 21
+        },
+        {
+          "wall_ms": 0.827242,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.644,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 22
+        },
+        {
+          "wall_ms": 0.706511,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.582,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 23
+        },
+        {
+          "wall_ms": 0.841944,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.657,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 24
+        },
+        {
+          "wall_ms": 0.709862,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.583,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 25
+        },
+        {
+          "wall_ms": 0.832394,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.573,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 26
+        },
+        {
+          "wall_ms": 0.69639,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.568,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 27
+        },
+        {
+          "wall_ms": 0.717181,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.625,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 28
+        },
+        {
+          "wall_ms": 0.698131,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.574,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 29
+        },
+        {
+          "wall_ms": 0.710852,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.583,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 30
+        },
+        {
+          "wall_ms": 0.770122,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.63,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 31
+        },
+        {
+          "wall_ms": 0.692511,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.596,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 32
+        },
+        {
+          "wall_ms": 0.694211,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.597,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 33
+        },
+        {
+          "wall_ms": 0.69674,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.571,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 34
+        },
+        {
+          "wall_ms": 0.685321,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.591,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 35
+        },
+        {
+          "wall_ms": 0.697322,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.572,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 36
+        },
+        {
+          "wall_ms": 0.71532,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.622,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 37
+        },
+        {
+          "wall_ms": 0.669881,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.577,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 38
+        },
+        {
+          "wall_ms": 0.699811,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.57,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 39
+        },
+        {
+          "wall_ms": 0.66782,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.576,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 40
+        },
+        {
+          "wall_ms": 0.725342,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.599,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 41
+        },
+        {
+          "wall_ms": 0.669971,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.576,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 42
+        },
+        {
+          "wall_ms": 0.692721,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.568,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 43
+        },
+        {
+          "wall_ms": 0.662131,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.569,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 44
+        },
+        {
+          "wall_ms": 0.7181,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.592,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 45
+        },
+        {
+          "wall_ms": 0.720882,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.627,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 46
+        },
+        {
+          "wall_ms": 0.70541,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.577,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 47
+        },
+        {
+          "wall_ms": 0.681721,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.575,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 48
+        },
+        {
+          "wall_ms": 0.696792,
+          "peak_rss_kib": 1152,
+          "cpu_ms": 0.572,
+          "exit_code": 0,
+          "timeout": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "correct": true,
+          "sample": 49
+        }
+      ],
+      "summary": {
+        "samples": 50,
+        "median_ms": 0.709727,
+        "min_ms": 0.662131,
+        "max_ms": 0.844064,
+        "p90_ms": 0.8276992000000001,
+        "p95_ms": 0.83297645,
+        "p99_ms": 0.8430252,
+        "median_peak_rss_kib": 1152.0
+      }
+    },
+    {
+      "id": "pty-small-heap",
+      "samples": [
+        {
+          "wall_ms": 1.086167,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 0
+        },
+        {
+          "wall_ms": 1.004125,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 1
+        },
+        {
+          "wall_ms": 0.861574,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 2
+        },
+        {
+          "wall_ms": 0.858883,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 3
+        },
+        {
+          "wall_ms": 0.874934,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 4
+        },
+        {
+          "wall_ms": 0.832293,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 5
+        },
+        {
+          "wall_ms": 0.893464,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 6
+        },
+        {
+          "wall_ms": 1.052736,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 7
+        },
+        {
+          "wall_ms": 0.848654,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 8
+        },
+        {
+          "wall_ms": 0.850003,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 9
+        },
+        {
+          "wall_ms": 0.804503,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 10
+        },
+        {
+          "wall_ms": 0.861104,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 11
+        },
+        {
+          "wall_ms": 0.848533,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 12
+        },
+        {
+          "wall_ms": 1.027416,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 13
+        },
+        {
+          "wall_ms": 0.846273,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 14
+        },
+        {
+          "wall_ms": 0.829213,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 15
+        },
+        {
+          "wall_ms": 0.835642,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 16
+        },
+        {
+          "wall_ms": 0.957455,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 17
+        },
+        {
+          "wall_ms": 0.854994,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 18
+        },
+        {
+          "wall_ms": 0.822724,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 19
+        },
+        {
+          "wall_ms": 0.871734,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 20
+        },
+        {
+          "wall_ms": 0.837743,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 21
+        },
+        {
+          "wall_ms": 0.953086,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 22
+        },
+        {
+          "wall_ms": 0.845552,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 23
+        },
+        {
+          "wall_ms": 0.854674,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 24
+        },
+        {
+          "wall_ms": 0.827063,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 25
+        },
+        {
+          "wall_ms": 0.835273,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 26
+        },
+        {
+          "wall_ms": 0.838063,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 27
+        },
+        {
+          "wall_ms": 0.854152,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 28
+        },
+        {
+          "wall_ms": 0.807704,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 29
+        },
+        {
+          "wall_ms": 0.826853,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 30
+        },
+        {
+          "wall_ms": 0.878444,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 31
+        },
+        {
+          "wall_ms": 1.058317,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 32
+        },
+        {
+          "wall_ms": 0.838373,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 33
+        },
+        {
+          "wall_ms": 0.835404,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 34
+        },
+        {
+          "wall_ms": 0.845654,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 35
+        },
+        {
+          "wall_ms": 0.857344,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 36
+        },
+        {
+          "wall_ms": 0.940245,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 37
+        },
+        {
+          "wall_ms": 0.870393,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 38
+        },
+        {
+          "wall_ms": 0.832893,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 39
+        },
+        {
+          "wall_ms": 0.828473,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 40
+        },
+        {
+          "wall_ms": 0.837913,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 41
+        },
+        {
+          "wall_ms": 0.938894,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 42
+        },
+        {
+          "wall_ms": 0.833973,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 43
+        },
+        {
+          "wall_ms": 0.802342,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 44
+        },
+        {
+          "wall_ms": 0.871894,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 45
+        },
+        {
+          "wall_ms": 0.822972,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 46
+        },
+        {
+          "wall_ms": 0.961825,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 47
+        },
+        {
+          "wall_ms": 0.843734,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 48
+        },
+        {
+          "wall_ms": 0.822453,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 49
+        }
+      ],
+      "summary": {
+        "samples": 50,
+        "median_ms": 0.8485935,
+        "min_ms": 0.802342,
+        "max_ms": 1.086167,
+        "p90_ms": 0.9660550000000001,
+        "p95_ms": 1.041342,
+        "p99_ms": 1.0725205,
+        "median_peak_rss_kib": null
+      }
+    },
+    {
+      "id": "pty-128MiB-heap",
+      "samples": [
+        {
+          "wall_ms": 0.980936,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 0
+        },
+        {
+          "wall_ms": 0.869344,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 1
+        },
+        {
+          "wall_ms": 0.882604,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 2
+        },
+        {
+          "wall_ms": 0.889373,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 3
+        },
+        {
+          "wall_ms": 0.835673,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 4
+        },
+        {
+          "wall_ms": 0.882224,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 5
+        },
+        {
+          "wall_ms": 0.945116,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 6
+        },
+        {
+          "wall_ms": 0.861453,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 7
+        },
+        {
+          "wall_ms": 0.832863,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 8
+        },
+        {
+          "wall_ms": 0.861724,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 9
+        },
+        {
+          "wall_ms": 0.823452,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 10
+        },
+        {
+          "wall_ms": 0.871903,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 11
+        },
+        {
+          "wall_ms": 0.980695,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 12
+        },
+        {
+          "wall_ms": 0.846893,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 13
+        },
+        {
+          "wall_ms": 0.872504,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 14
+        },
+        {
+          "wall_ms": 0.938364,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 15
+        },
+        {
+          "wall_ms": 0.858763,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 16
+        },
+        {
+          "wall_ms": 0.866903,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 17
+        },
+        {
+          "wall_ms": 0.892933,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 18
+        },
+        {
+          "wall_ms": 0.854743,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 19
+        },
+        {
+          "wall_ms": 0.903924,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 20
+        },
+        {
+          "wall_ms": 0.955375,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 21
+        },
+        {
+          "wall_ms": 0.899835,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 22
+        },
+        {
+          "wall_ms": 0.840183,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 23
+        },
+        {
+          "wall_ms": 0.839272,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 24
+        },
+        {
+          "wall_ms": 1.014197,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 25
+        },
+        {
+          "wall_ms": 0.908103,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 26
+        },
+        {
+          "wall_ms": 0.839032,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 27
+        },
+        {
+          "wall_ms": 1.001435,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 28
+        },
+        {
+          "wall_ms": 0.841603,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 29
+        },
+        {
+          "wall_ms": 0.865233,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 30
+        },
+        {
+          "wall_ms": 0.866154,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 31
+        },
+        {
+          "wall_ms": 0.922045,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 32
+        },
+        {
+          "wall_ms": 0.866164,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 33
+        },
+        {
+          "wall_ms": 0.857083,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 34
+        },
+        {
+          "wall_ms": 0.828613,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 35
+        },
+        {
+          "wall_ms": 0.886014,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 36
+        },
+        {
+          "wall_ms": 0.821323,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 37
+        },
+        {
+          "wall_ms": 0.847203,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 38
+        },
+        {
+          "wall_ms": 0.894214,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 39
+        },
+        {
+          "wall_ms": 0.810043,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 40
+        },
+        {
+          "wall_ms": 0.825524,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 41
+        },
+        {
+          "wall_ms": 0.921645,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 42
+        },
+        {
+          "wall_ms": 0.810443,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 43
+        },
+        {
+          "wall_ms": 0.834552,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 44
+        },
+        {
+          "wall_ms": 0.979236,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 45
+        },
+        {
+          "wall_ms": 0.885794,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 46
+        },
+        {
+          "wall_ms": 0.854043,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 47
+        },
+        {
+          "wall_ms": 0.863573,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 48
+        },
+        {
+          "wall_ms": 0.942905,
+          "peak_rss_kib": null,
+          "correct": true,
+          "metric": "compiled-forkpty-to-first-prompt",
+          "exit_code": null,
+          "teardown": "SIGTERM bridge kills child process group after oracle; RSS omitted",
+          "sample": 49
+        }
+      ],
+      "summary": {
+        "samples": 50,
+        "median_ms": 0.8665335000000001,
+        "min_ms": 0.810043,
+        "max_ms": 1.014197,
+        "p90_ms": 0.9577611,
+        "p95_ms": 0.98082755,
+        "p99_ms": 1.00794362,
+        "median_peak_rss_kib": null
+      }
+    }
+  ]
+}

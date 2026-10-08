@@ -1,0 +1,30 @@
+{
+  "series": "20261008-v480",
+  "suite": "shell",
+  "official_raw_files": {
+    "shell-repeated.json": {
+      "schema": 2,
+      "sha256": "08b721573ff26ed3928dd0127fa85cf7815948f5f88e43281ff90a3b6a29deda",
+      "jobs": 76,
+      "measured_samples": 4900,
+      "retained_warmups": 228
+    },
+    "shell-application-cold.json": {
+      "schema": 2,
+      "sha256": "66d9e778b9ca2a0aff491f7c4bc192ba8ac13f7589b4ae19d0a568ccfe79ad9a",
+      "jobs": 76,
+      "measured_samples": 1680,
+      "retained_warmups": 228
+    }
+  },
+  "helper_tests_before_and_after": 3,
+  "configuration_cases_before_and_after": 18,
+  "source_definition_drift": false,
+  "summary_recomputation": "All retained distribution fields equal independent summarizer output",
+  "clean_checkout": true,
+  "affinity": [
+    0
+  ],
+  "no_discarded_samples": true,
+  "smoke_full_matrix_passed": true
+}

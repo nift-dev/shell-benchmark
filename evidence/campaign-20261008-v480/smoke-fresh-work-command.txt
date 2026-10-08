@@ -1,0 +1,1 @@
+taskset -c 0 python3 scripts/benchmark.py --nift /opt/campaign/tools/bin/nift --samples 5 --work-samples 5 --warmups 1 --state application-cold --modes work --output /opt/campaign/evidence/smoke-shell-fresh-work.json

@@ -1,0 +1,462 @@
+{
+  "bash/bare/immediate-exit": {
+    "samples": 5,
+    "median_ms": 1.677905,
+    "min_ms": 1.669994,
+    "max_ms": 1.751085,
+    "p90_ms": 1.744281,
+    "p95_ms": 1.747683,
+    "p99_ms": 1.7504046,
+    "median_peak_rss_kib": 3456
+  },
+  "bash/bare/trivial-command": {
+    "samples": 5,
+    "median_ms": 1.605444,
+    "min_ms": 1.457662,
+    "max_ms": 1.769666,
+    "p90_ms": 1.7607784,
+    "p95_ms": 1.7652222,
+    "p99_ms": 1.76877724,
+    "median_peak_rss_kib": 3456
+  },
+  "bash/bare/interactive": {
+    "samples": 5,
+    "median_ms": 1.968639,
+    "min_ms": 1.90733,
+    "max_ms": 2.214092,
+    "p90_ms": 2.1284312,
+    "p95_ms": 2.1712616,
+    "p99_ms": 2.20552592,
+    "median_peak_rss_kib": null
+  },
+  "bash/bare/interactive-login": {
+    "samples": 5,
+    "median_ms": 1.967909,
+    "min_ms": 1.793237,
+    "max_ms": 2.235754,
+    "p90_ms": 2.1366964,
+    "p95_ms": 2.1862252,
+    "p99_ms": 2.22584824,
+    "median_peak_rss_kib": null
+  },
+  "bash/empty/interactive": {
+    "samples": 5,
+    "median_ms": 3.574392,
+    "min_ms": 3.464112,
+    "max_ms": 4.784502,
+    "p90_ms": 4.4097724,
+    "p95_ms": 4.5971372,
+    "p99_ms": 4.74702904,
+    "median_peak_rss_kib": null
+  },
+  "bash/empty/interactive-login": {
+    "samples": 5,
+    "median_ms": 17.638813,
+    "min_ms": 17.50691,
+    "max_ms": 18.521859,
+    "p90_ms": 18.4458074,
+    "p95_ms": 18.4838332,
+    "p99_ms": 18.51425384,
+    "median_peak_rss_kib": null
+  },
+  "bash/light/interactive": {
+    "samples": 5,
+    "median_ms": 3.562773,
+    "min_ms": 3.544253,
+    "max_ms": 3.880907,
+    "p90_ms": 3.8538226,
+    "p95_ms": 3.8673648000000003,
+    "p99_ms": 3.87819856,
+    "median_peak_rss_kib": null
+  },
+  "bash/light/interactive-login": {
+    "samples": 5,
+    "median_ms": 17.727623,
+    "min_ms": 17.349225,
+    "max_ms": 19.244855,
+    "p90_ms": 18.7826498,
+    "p95_ms": 19.0137524,
+    "p99_ms": 19.198634480000003,
+    "median_peak_rss_kib": null
+  },
+  "bash/moderate/interactive": {
+    "samples": 5,
+    "median_ms": 3.810326,
+    "min_ms": 3.702376,
+    "max_ms": 4.238873,
+    "p90_ms": 4.215113,
+    "p95_ms": 4.226993,
+    "p99_ms": 4.236497,
+    "median_peak_rss_kib": null
+  },
+  "bash/moderate/interactive-login": {
+    "samples": 5,
+    "median_ms": 18.147471,
+    "min_ms": 17.418999,
+    "max_ms": 20.603531,
+    "p90_ms": 19.841757,
+    "p95_ms": 20.222644,
+    "p99_ms": 20.5273536,
+    "median_peak_rss_kib": null
+  },
+  "zsh/bare/immediate-exit": {
+    "samples": 5,
+    "median_ms": 2.054131,
+    "min_ms": 1.98002,
+    "max_ms": 2.396246,
+    "p90_ms": 2.3684412,
+    "p95_ms": 2.3823436,
+    "p99_ms": 2.39346552,
+    "median_peak_rss_kib": 3712
+  },
+  "zsh/bare/trivial-command": {
+    "samples": 5,
+    "median_ms": 2.04199,
+    "min_ms": 1.934428,
+    "max_ms": 2.239794,
+    "p90_ms": 2.2268776,
+    "p95_ms": 2.2333358,
+    "p99_ms": 2.23850236,
+    "median_peak_rss_kib": 3712
+  },
+  "zsh/bare/interactive": {
+    "samples": 5,
+    "median_ms": 2.790822,
+    "min_ms": 2.605128,
+    "max_ms": 3.016116,
+    "p90_ms": 3.0041271999999997,
+    "p95_ms": 3.0101215999999997,
+    "p99_ms": 3.01491712,
+    "median_peak_rss_kib": null
+  },
+  "zsh/bare/interactive-login": {
+    "samples": 5,
+    "median_ms": 2.66632,
+    "min_ms": 2.488118,
+    "max_ms": 3.066605,
+    "p90_ms": 3.0032522,
+    "p95_ms": 3.0349286,
+    "p99_ms": 3.06026972,
+    "median_peak_rss_kib": null
+  },
+  "zsh/empty/interactive": {
+    "samples": 5,
+    "median_ms": 511.139006,
+    "min_ms": 499.73376,
+    "max_ms": 536.183967,
+    "p90_ms": 530.4684522,
+    "p95_ms": 533.3262096000001,
+    "p99_ms": 535.61241552,
+    "median_peak_rss_kib": null
+  },
+  "zsh/empty/interactive-login": {
+    "samples": 5,
+    "median_ms": 504.218664,
+    "min_ms": 497.380436,
+    "max_ms": 525.044425,
+    "p90_ms": 517.6981418,
+    "p95_ms": 521.3712834,
+    "p99_ms": 524.3097966800001,
+    "median_peak_rss_kib": null
+  },
+  "zsh/light/interactive": {
+    "samples": 5,
+    "median_ms": 510.474052,
+    "min_ms": 493.219932,
+    "max_ms": 532.965248,
+    "p90_ms": 526.6929087999999,
+    "p95_ms": 529.8290784,
+    "p99_ms": 532.33801408,
+    "median_peak_rss_kib": null
+  },
+  "zsh/light/interactive-login": {
+    "samples": 5,
+    "median_ms": 503.08037,
+    "min_ms": 494.293802,
+    "max_ms": 538.562146,
+    "p90_ms": 525.2580824,
+    "p95_ms": 531.9101142,
+    "p99_ms": 537.23173964,
+    "median_peak_rss_kib": null
+  },
+  "zsh/moderate/interactive": {
+    "samples": 5,
+    "median_ms": 506.433435,
+    "min_ms": 494.018345,
+    "max_ms": 520.188561,
+    "p90_ms": 516.9863586,
+    "p95_ms": 518.5874598,
+    "p99_ms": 519.86834076,
+    "median_peak_rss_kib": null
+  },
+  "zsh/moderate/interactive-login": {
+    "samples": 5,
+    "median_ms": 509.655396,
+    "min_ms": 497.546689,
+    "max_ms": 537.26671,
+    "p90_ms": 528.4646991999999,
+    "p95_ms": 532.8657046,
+    "p99_ms": 536.38650892,
+    "median_peak_rss_kib": null
+  },
+  "fish/bare/immediate-exit": {
+    "samples": 5,
+    "median_ms": 2.648139,
+    "min_ms": 2.576018,
+    "max_ms": 2.793362,
+    "p90_ms": 2.7390328,
+    "p95_ms": 2.7661974000000003,
+    "p99_ms": 2.78792908,
+    "median_peak_rss_kib": 5504
+  },
+  "fish/bare/trivial-command": {
+    "samples": 5,
+    "median_ms": 2.362175,
+    "min_ms": 2.247014,
+    "max_ms": 2.689481,
+    "p90_ms": 2.596803,
+    "p95_ms": 2.6431419999999997,
+    "p99_ms": 2.6802132,
+    "median_peak_rss_kib": 5504
+  },
+  "fish/bare/interactive": {
+    "samples": 5,
+    "median_ms": 18.292048,
+    "min_ms": 17.998894,
+    "max_ms": 18.720678,
+    "p90_ms": 18.7042776,
+    "p95_ms": 18.7124778,
+    "p99_ms": 18.719037959999998,
+    "median_peak_rss_kib": null
+  },
+  "fish/bare/interactive-login": {
+    "samples": 5,
+    "median_ms": 19.908653,
+    "min_ms": 19.554216,
+    "max_ms": 20.19333,
+    "p90_ms": 20.183074,
+    "p95_ms": 20.188202,
+    "p99_ms": 20.1923044,
+    "median_peak_rss_kib": null
+  },
+  "fish/empty/interactive": {
+    "samples": 5,
+    "median_ms": 66.232259,
+    "min_ms": 65.768311,
+    "max_ms": 68.455774,
+    "p90_ms": 67.8840304,
+    "p95_ms": 68.16990220000001,
+    "p99_ms": 68.39859964,
+    "median_peak_rss_kib": null
+  },
+  "fish/empty/interactive-login": {
+    "samples": 5,
+    "median_ms": 63.884324,
+    "min_ms": 60.712383,
+    "max_ms": 64.730748,
+    "p90_ms": 64.653864,
+    "p95_ms": 64.692306,
+    "p99_ms": 64.7230596,
+    "median_peak_rss_kib": null
+  },
+  "fish/light/interactive": {
+    "samples": 5,
+    "median_ms": 62.807061,
+    "min_ms": 60.92032,
+    "max_ms": 64.861795,
+    "p90_ms": 64.1357094,
+    "p95_ms": 64.4987522,
+    "p99_ms": 64.78918644,
+    "median_peak_rss_kib": null
+  },
+  "fish/light/interactive-login": {
+    "samples": 5,
+    "median_ms": 59.4763,
+    "min_ms": 58.712533,
+    "max_ms": 61.672564,
+    "p90_ms": 61.1145808,
+    "p95_ms": 61.393572400000004,
+    "p99_ms": 61.61676568,
+    "median_peak_rss_kib": null
+  },
+  "fish/moderate/interactive": {
+    "samples": 5,
+    "median_ms": 64.363241,
+    "min_ms": 61.663297,
+    "max_ms": 65.192437,
+    "p90_ms": 65.0556322,
+    "p95_ms": 65.1240346,
+    "p99_ms": 65.17875652,
+    "median_peak_rss_kib": null
+  },
+  "fish/moderate/interactive-login": {
+    "samples": 5,
+    "median_ms": 60.513507,
+    "min_ms": 59.078719,
+    "max_ms": 63.298686,
+    "p90_ms": 62.8195336,
+    "p95_ms": 63.059109799999995,
+    "p99_ms": 63.250770759999995,
+    "median_peak_rss_kib": null
+  },
+  "nu/bare/immediate-exit": {
+    "samples": 5,
+    "median_ms": 13.194557,
+    "min_ms": 12.634965,
+    "max_ms": 13.424539,
+    "p90_ms": 13.4135306,
+    "p95_ms": 13.419034799999999,
+    "p99_ms": 13.42343816,
+    "median_peak_rss_kib": 25216
+  },
+  "nu/bare/trivial-command": {
+    "samples": 5,
+    "median_ms": 12.869301,
+    "min_ms": 12.568085,
+    "max_ms": 13.51037,
+    "p90_ms": 13.3627228,
+    "p95_ms": 13.4365464,
+    "p99_ms": 13.49560528,
+    "median_peak_rss_kib": 25472
+  },
+  "nu/bare/interactive": {
+    "samples": 5,
+    "median_ms": 16.382389,
+    "min_ms": 16.093061,
+    "max_ms": 17.071473,
+    "p90_ms": 16.917407400000002,
+    "p95_ms": 16.9944402,
+    "p99_ms": 17.056066440000002,
+    "median_peak_rss_kib": null
+  },
+  "nu/bare/interactive-login": {
+    "samples": 5,
+    "median_ms": 16.759517,
+    "min_ms": 16.113566,
+    "max_ms": 17.699593,
+    "p90_ms": 17.5562394,
+    "p95_ms": 17.6279162,
+    "p99_ms": 17.68525764,
+    "median_peak_rss_kib": null
+  },
+  "nu/empty/interactive": {
+    "samples": 5,
+    "median_ms": 19.161093,
+    "min_ms": 18.44501,
+    "max_ms": 19.890076,
+    "p90_ms": 19.6591132,
+    "p95_ms": 19.7745946,
+    "p99_ms": 19.86697972,
+    "median_peak_rss_kib": null
+  },
+  "nu/empty/interactive-login": {
+    "samples": 5,
+    "median_ms": 19.365759,
+    "min_ms": 18.716474,
+    "max_ms": 21.579349,
+    "p90_ms": 21.2838474,
+    "p95_ms": 21.4315982,
+    "p99_ms": 21.54979884,
+    "median_peak_rss_kib": null
+  },
+  "nu/light/interactive": {
+    "samples": 5,
+    "median_ms": 19.535505,
+    "min_ms": 19.252916,
+    "max_ms": 19.954775,
+    "p90_ms": 19.9521686,
+    "p95_ms": 19.953471800000003,
+    "p99_ms": 19.95451436,
+    "median_peak_rss_kib": null
+  },
+  "nu/light/interactive-login": {
+    "samples": 5,
+    "median_ms": 19.426054,
+    "min_ms": 18.896283,
+    "max_ms": 19.794062,
+    "p90_ms": 19.6946536,
+    "p95_ms": 19.7443578,
+    "p99_ms": 19.78412116,
+    "median_peak_rss_kib": null
+  },
+  "nu/moderate/interactive": {
+    "samples": 5,
+    "median_ms": 20.33972,
+    "min_ms": 19.732772,
+    "max_ms": 21.243822,
+    "p90_ms": 20.9567768,
+    "p95_ms": 21.1002994,
+    "p99_ms": 21.21511748,
+    "median_peak_rss_kib": null
+  },
+  "nu/moderate/interactive-login": {
+    "samples": 5,
+    "median_ms": 20.575481,
+    "min_ms": 19.941448,
+    "max_ms": 22.483552,
+    "p90_ms": 21.7537764,
+    "p95_ms": 22.118664199999998,
+    "p99_ms": 22.410574439999998,
+    "median_peak_rss_kib": null
+  },
+  "nift/bare/immediate-exit": {
+    "samples": 5,
+    "median_ms": 2.193302,
+    "min_ms": 2.069901,
+    "max_ms": 3.126626,
+    "p90_ms": 2.9700916,
+    "p95_ms": 3.0483588,
+    "p99_ms": 3.11097256,
+    "median_peak_rss_kib": 5376
+  },
+  "nift/bare/trivial-command": {
+    "samples": 5,
+    "median_ms": 2.04676,
+    "min_ms": 1.97135,
+    "max_ms": 2.381495,
+    "p90_ms": 2.2735734,
+    "p95_ms": 2.3275342,
+    "p99_ms": 2.3707028400000003,
+    "median_peak_rss_kib": 6016
+  },
+  "nift/bare/interactive": {
+    "samples": 5,
+    "median_ms": 1.825807,
+    "min_ms": 1.723255,
+    "max_ms": 2.027821,
+    "p90_ms": 1.9470193999999998,
+    "p95_ms": 1.9874201999999999,
+    "p99_ms": 2.01974084,
+    "median_peak_rss_kib": null
+  },
+  "nift/empty/interactive": {
+    "samples": 5,
+    "median_ms": 1.860217,
+    "min_ms": 1.783116,
+    "max_ms": 2.107972,
+    "p90_ms": 2.0226824000000003,
+    "p95_ms": 2.0653272,
+    "p99_ms": 2.09944304,
+    "median_peak_rss_kib": null
+  },
+  "nift/light/interactive": {
+    "samples": 5,
+    "median_ms": 2.134122,
+    "min_ms": 2.10327,
+    "max_ms": 2.537518,
+    "p90_ms": 2.3866232,
+    "p95_ms": 2.4620705999999997,
+    "p99_ms": 2.52242852,
+    "median_peak_rss_kib": null
+  },
+  "nift/moderate/interactive": {
+    "samples": 5,
+    "median_ms": 2.719611,
+    "min_ms": 2.652499,
+    "max_ms": 3.158776,
+    "p90_ms": 2.9933300000000003,
+    "p95_ms": 3.076053,
+    "p99_ms": 3.1422314,
+    "median_peak_rss_kib": null
+  }
+}
