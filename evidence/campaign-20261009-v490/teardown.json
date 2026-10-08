@@ -1,4 +1,12 @@
 {
-  "status": "Awaiting verified live publication before deletion",
-  "label": "nift-shell-20261009-v490"
+  "label": "nift-shell-20261009-v490",
+  "type": "g6-standard-4",
+  "region": "us-east",
+  "image": "linode/ubuntu24.04",
+  "created": "2026-10-08T15:51:06",
+  "instance_identity_sha256": "3e73ad0b5fa8f970ad49670c4400c77965842cf498b6e55b9e4cc2cea68fc4bb",
+  "verification_http_status": 404,
+  "deleted_verified_utc": "2026-10-08T16:14:29.680419+00:00",
+  "provisioned_with": "linode-cli",
+  "backups_enabled": false
 }
