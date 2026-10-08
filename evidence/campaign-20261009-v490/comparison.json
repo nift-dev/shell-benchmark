@@ -1,0 +1,1375 @@
+{
+  "note": "Cross-node ratios are review signals, not version speedups. Hardware, runtime versions, cache state and shared CPU scheduling may differ.",
+  "prior_series": "20261008-v480",
+  "current_series": "20261009-v490",
+  "cases": [
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/immediate-exit",
+      "prior_median_ms": 1.6525824999999998,
+      "current_median_ms": 1.852786,
+      "prior_p99_ms": 2.1160299300000007,
+      "current_p99_ms": 2.7441081800000005,
+      "cross_node_ratio_for_internal_review": 1.1211458429458137
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/trivial-command",
+      "prior_median_ms": 1.562455,
+      "current_median_ms": 1.802806,
+      "prior_p99_ms": 1.9276645300000008,
+      "current_p99_ms": 3.7596799300000043,
+      "cross_node_ratio_for_internal_review": 1.153829070277224
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/interactive",
+      "prior_median_ms": 1.976181,
+      "current_median_ms": 2.288654,
+      "prior_p99_ms": 2.4413895800000023,
+      "current_p99_ms": 4.033887230000005,
+      "cross_node_ratio_for_internal_review": 1.1581196256820605
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/interactive-login",
+      "prior_median_ms": 1.9126195,
+      "current_median_ms": 2.313567,
+      "prior_p99_ms": 2.5563617100000027,
+      "current_p99_ms": 6.074903540000012,
+      "cross_node_ratio_for_internal_review": 1.2096326530185435
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/empty/interactive",
+      "prior_median_ms": 3.53053,
+      "current_median_ms": 4.167597,
+      "prior_p99_ms": 4.49652499,
+      "current_p99_ms": 9.207112610000001,
+      "cross_node_ratio_for_internal_review": 1.180445145629693
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/empty/interactive-login",
+      "prior_median_ms": 17.809798999999998,
+      "current_median_ms": 20.034487,
+      "prior_p99_ms": 24.743667360000003,
+      "current_p99_ms": 28.534990540000006,
+      "cross_node_ratio_for_internal_review": 1.1249137062130796
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/light/interactive",
+      "prior_median_ms": 3.6874830000000003,
+      "current_median_ms": 4.294062,
+      "prior_p99_ms": 5.10400554,
+      "current_p99_ms": 6.7688062300000045,
+      "cross_node_ratio_for_internal_review": 1.1644967583579369
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/light/interactive-login",
+      "prior_median_ms": 17.884957,
+      "current_median_ms": 19.8386245,
+      "prior_p99_ms": 25.590948230000006,
+      "current_p99_ms": 30.951774570000012,
+      "cross_node_ratio_for_internal_review": 1.1092352360701792
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/moderate/interactive",
+      "prior_median_ms": 3.9121185,
+      "current_median_ms": 4.431668500000001,
+      "prior_p99_ms": 5.68995548,
+      "current_p99_ms": 6.819686320000011,
+      "cross_node_ratio_for_internal_review": 1.1328052818440957
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/moderate/interactive-login",
+      "prior_median_ms": 18.031631500000003,
+      "current_median_ms": 20.8307115,
+      "prior_p99_ms": 26.122420290000015,
+      "current_p99_ms": 27.20656522000002,
+      "cross_node_ratio_for_internal_review": 1.155231654994724
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/function-string",
+      "prior_median_ms": 1.6813075,
+      "current_median_ms": 2.005725,
+      "prior_p99_ms": 1.9797629,
+      "current_p99_ms": 2.3624770799999997,
+      "cross_node_ratio_for_internal_review": 1.1929554825634217
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/command-capture",
+      "prior_median_ms": 2.8541185000000002,
+      "current_median_ms": 3.3943255,
+      "prior_p99_ms": 3.1749510499999998,
+      "current_p99_ms": 3.88356545,
+      "cross_node_ratio_for_internal_review": 1.1892727999906099
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/file-roundtrip",
+      "prior_median_ms": 3.7253145,
+      "current_median_ms": 4.5137505,
+      "prior_p99_ms": 5.64651501,
+      "current_p99_ms": 5.58116833,
+      "cross_node_ratio_for_internal_review": 1.2116428022385761
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/native-sum",
+      "prior_median_ms": 4.9254275,
+      "current_median_ms": 5.3000755,
+      "prior_p99_ms": 5.7515529800000005,
+      "current_p99_ms": 7.7106144599999995,
+      "cross_node_ratio_for_internal_review": 1.0760640573838516
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/external-100",
+      "prior_median_ms": 83.0934325,
+      "current_median_ms": 90.213991,
+      "prior_p99_ms": 87.34187954000001,
+      "current_p99_ms": 103.83719151000001,
+      "cross_node_ratio_for_internal_review": 1.0856933970082412
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "bash/bare/short-pipeline",
+      "prior_median_ms": 4.1094170000000005,
+      "current_median_ms": 4.458769,
+      "prior_p99_ms": 4.7575774,
+      "current_p99_ms": 5.09653458,
+      "cross_node_ratio_for_internal_review": 1.0850125455751995
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/immediate-exit",
+      "prior_median_ms": 2.0968030000000004,
+      "current_median_ms": 2.3573215,
+      "prior_p99_ms": 2.9979606000000047,
+      "current_p99_ms": 3.3410294800000004,
+      "cross_node_ratio_for_internal_review": 1.1242455776722942
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/trivial-command",
+      "prior_median_ms": 2.010859,
+      "current_median_ms": 2.3409435,
+      "prior_p99_ms": 2.8073832000000003,
+      "current_p99_ms": 5.245467220000007,
+      "cross_node_ratio_for_internal_review": 1.1641509921879156
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/interactive",
+      "prior_median_ms": 2.7481405,
+      "current_median_ms": 3.269412,
+      "prior_p99_ms": 4.0099379200000005,
+      "current_p99_ms": 6.840154180000007,
+      "cross_node_ratio_for_internal_review": 1.189681531930409
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/interactive-login",
+      "prior_median_ms": 2.640419,
+      "current_median_ms": 3.2112135,
+      "prior_p99_ms": 3.7909095200000005,
+      "current_p99_ms": 7.38060786,
+      "cross_node_ratio_for_internal_review": 1.2161757281704153
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/empty/interactive",
+      "prior_median_ms": 26.193977500000003,
+      "current_median_ms": 29.004088,
+      "prior_p99_ms": 33.13446044000001,
+      "current_p99_ms": 44.09807565000001,
+      "cross_node_ratio_for_internal_review": 1.1072807862036225
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/empty/interactive-login",
+      "prior_median_ms": 26.363777499999998,
+      "current_median_ms": 29.048066499999997,
+      "prior_p99_ms": 30.648729910000007,
+      "current_p99_ms": 38.56129309000002,
+      "cross_node_ratio_for_internal_review": 1.101817313546968
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/light/interactive",
+      "prior_median_ms": 26.3529335,
+      "current_median_ms": 29.278284,
+      "prior_p99_ms": 29.674941420000017,
+      "current_p99_ms": 40.431260800000004,
+      "cross_node_ratio_for_internal_review": 1.1110066361302813
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/light/interactive-login",
+      "prior_median_ms": 26.412085,
+      "current_median_ms": 29.303757,
+      "prior_p99_ms": 33.157310730000006,
+      "current_p99_ms": 38.02888737000016,
+      "cross_node_ratio_for_internal_review": 1.1094829128408454
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/moderate/interactive",
+      "prior_median_ms": 26.5909435,
+      "current_median_ms": 29.85763,
+      "prior_p99_ms": 31.964273920000007,
+      "current_p99_ms": 37.17430272000004,
+      "cross_node_ratio_for_internal_review": 1.1228495897484796
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/moderate/interactive-login",
+      "prior_median_ms": 26.816563000000002,
+      "current_median_ms": 30.065518,
+      "prior_p99_ms": 32.040338900000016,
+      "current_p99_ms": 41.30434395000001,
+      "cross_node_ratio_for_internal_review": 1.1211547878078185
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/function-string",
+      "prior_median_ms": 2.216016,
+      "current_median_ms": 2.3092335,
+      "prior_p99_ms": 2.3665154,
+      "current_p99_ms": 3.0649840900000003,
+      "cross_node_ratio_for_internal_review": 1.0420653551237895
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/command-capture",
+      "prior_median_ms": 3.418384,
+      "current_median_ms": 3.5452875,
+      "prior_p99_ms": 3.76642282,
+      "current_p99_ms": 4.82213569,
+      "cross_node_ratio_for_internal_review": 1.0371238281012314
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/file-roundtrip",
+      "prior_median_ms": 4.2487245,
+      "current_median_ms": 5.127338,
+      "prior_p99_ms": 5.348277680000001,
+      "current_p99_ms": 6.246646050000001,
+      "cross_node_ratio_for_internal_review": 1.2067946509593643
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/native-sum",
+      "prior_median_ms": 3.3164675,
+      "current_median_ms": 3.6465185,
+      "prior_p99_ms": 4.25868365,
+      "current_p99_ms": 5.3898002400000005,
+      "cross_node_ratio_for_internal_review": 1.099518840452982
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/external-100",
+      "prior_median_ms": 97.45054300000001,
+      "current_median_ms": 109.30363750000001,
+      "prior_p99_ms": 100.01909202,
+      "current_p99_ms": 128.82151291999998,
+      "cross_node_ratio_for_internal_review": 1.1216318979361664
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "zsh/bare/short-pipeline",
+      "prior_median_ms": 4.674767,
+      "current_median_ms": 5.245206,
+      "prior_p99_ms": 5.4243733,
+      "current_p99_ms": 6.396429250000001,
+      "cross_node_ratio_for_internal_review": 1.1220251191128883
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/immediate-exit",
+      "prior_median_ms": 2.401389,
+      "current_median_ms": 2.766198,
+      "prior_p99_ms": 3.1218253200000006,
+      "current_p99_ms": 5.459801520000007,
+      "cross_node_ratio_for_internal_review": 1.1519158287141318
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/trivial-command",
+      "prior_median_ms": 2.2408425000000003,
+      "current_median_ms": 2.6150640000000003,
+      "prior_p99_ms": 3.0434365700000017,
+      "current_p99_ms": 3.705301280000001,
+      "cross_node_ratio_for_internal_review": 1.1670003581242323
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/interactive",
+      "prior_median_ms": 18.6204965,
+      "current_median_ms": 21.334798,
+      "prior_p99_ms": 24.234121020000018,
+      "current_p99_ms": 35.982748050000005,
+      "cross_node_ratio_for_internal_review": 1.145769555607714
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/interactive-login",
+      "prior_median_ms": 19.940540499999997,
+      "current_median_ms": 22.413629,
+      "prior_p99_ms": 24.88794211000002,
+      "current_p99_ms": 34.53001403000001,
+      "cross_node_ratio_for_internal_review": 1.1240231427026766
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/empty/interactive",
+      "prior_median_ms": 38.589063499999995,
+      "current_median_ms": 44.056118,
+      "prior_p99_ms": 47.67600948000002,
+      "current_p99_ms": 64.88527551000006,
+      "cross_node_ratio_for_internal_review": 1.1416736765327307
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/empty/interactive-login",
+      "prior_median_ms": 38.290986000000004,
+      "current_median_ms": 43.80418349999999,
+      "prior_p99_ms": 45.46464995000001,
+      "current_p99_ms": 65.75012220000006,
+      "cross_node_ratio_for_internal_review": 1.1439816018318252
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/light/interactive",
+      "prior_median_ms": 39.3739045,
+      "current_median_ms": 44.453602000000004,
+      "prior_p99_ms": 51.43504659000006,
+      "current_p99_ms": 66.13810000000008,
+      "cross_node_ratio_for_internal_review": 1.1290117798705994
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/light/interactive-login",
+      "prior_median_ms": 37.970245500000004,
+      "current_median_ms": 43.6138955,
+      "prior_p99_ms": 49.623701820000065,
+      "current_p99_ms": 68.47159766000019,
+      "cross_node_ratio_for_internal_review": 1.14863348723937
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/moderate/interactive",
+      "prior_median_ms": 36.6070285,
+      "current_median_ms": 42.0216985,
+      "prior_p99_ms": 43.03313554000002,
+      "current_p99_ms": 58.094578700000085,
+      "cross_node_ratio_for_internal_review": 1.1479133986523926
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/moderate/interactive-login",
+      "prior_median_ms": 38.1953675,
+      "current_median_ms": 42.4872915,
+      "prior_p99_ms": 45.17997704000002,
+      "current_p99_ms": 63.99840293000006,
+      "cross_node_ratio_for_internal_review": 1.1123676581983402
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/function-string",
+      "prior_median_ms": 2.660765,
+      "current_median_ms": 3.2061444999999997,
+      "prior_p99_ms": 2.7473943999999997,
+      "current_p99_ms": 3.9450000800000002,
+      "cross_node_ratio_for_internal_review": 1.2049709388089513
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/command-capture",
+      "prior_median_ms": 3.48078,
+      "current_median_ms": 4.0553609999999995,
+      "prior_p99_ms": 4.23802341,
+      "current_p99_ms": 5.13351068,
+      "cross_node_ratio_for_internal_review": 1.1650724837536413
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/file-roundtrip",
+      "prior_median_ms": 4.380656,
+      "current_median_ms": 5.043524,
+      "prior_p99_ms": 4.96550769,
+      "current_p99_ms": 18.653242760000005,
+      "cross_node_ratio_for_internal_review": 1.1513170630152196
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/native-sum",
+      "prior_median_ms": 101.66119950000001,
+      "current_median_ms": 120.30900299999999,
+      "prior_p99_ms": 114.43833804,
+      "current_p99_ms": 171.75894573,
+      "cross_node_ratio_for_internal_review": 1.1834308821036483
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/external-100",
+      "prior_median_ms": 70.863107,
+      "current_median_ms": 80.3595965,
+      "prior_p99_ms": 76.19892828,
+      "current_p99_ms": 143.81392820000002,
+      "cross_node_ratio_for_internal_review": 1.1340117573450454
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "fish/bare/short-pipeline",
+      "prior_median_ms": 4.3974174999999995,
+      "current_median_ms": 4.8975715,
+      "prior_p99_ms": 5.73786792,
+      "current_p99_ms": 5.61982183,
+      "cross_node_ratio_for_internal_review": 1.1137381201580245
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/immediate-exit",
+      "prior_median_ms": 13.2114475,
+      "current_median_ms": 16.022027,
+      "prior_p99_ms": 16.976224850000005,
+      "current_p99_ms": 21.733430120000012,
+      "cross_node_ratio_for_internal_review": 1.2127381954172698
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/trivial-command",
+      "prior_median_ms": 13.122955000000001,
+      "current_median_ms": 14.7506025,
+      "prior_p99_ms": 16.367553850000007,
+      "current_p99_ms": 22.25115684,
+      "cross_node_ratio_for_internal_review": 1.124030563238234
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/interactive",
+      "prior_median_ms": 16.630888,
+      "current_median_ms": 19.014242,
+      "prior_p99_ms": 21.802985950000004,
+      "current_p99_ms": 28.58796192000008,
+      "cross_node_ratio_for_internal_review": 1.1433088840475627
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/interactive-login",
+      "prior_median_ms": 17.548115000000003,
+      "current_median_ms": 19.7119335,
+      "prior_p99_ms": 22.74150618000001,
+      "current_p99_ms": 32.597051710000045,
+      "cross_node_ratio_for_internal_review": 1.1233077455897684
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/empty/interactive",
+      "prior_median_ms": 19.934687500000003,
+      "current_median_ms": 22.1595285,
+      "prior_p99_ms": 26.41350454,
+      "current_p99_ms": 33.115479620000016,
+      "cross_node_ratio_for_internal_review": 1.1116065150256305
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/empty/interactive-login",
+      "prior_median_ms": 20.228031,
+      "current_median_ms": 22.4342855,
+      "prior_p99_ms": 26.194147970000014,
+      "current_p99_ms": 32.15374678000002,
+      "cross_node_ratio_for_internal_review": 1.1090691674340425
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/light/interactive",
+      "prior_median_ms": 20.4047475,
+      "current_median_ms": 22.6763645,
+      "prior_p99_ms": 26.27036194000001,
+      "current_p99_ms": 38.38164782000001,
+      "cross_node_ratio_for_internal_review": 1.1113278662232895
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/light/interactive-login",
+      "prior_median_ms": 20.167533,
+      "current_median_ms": 22.6867345,
+      "prior_p99_ms": 26.19348924,
+      "current_p99_ms": 34.47438862000001,
+      "cross_node_ratio_for_internal_review": 1.1249137165165417
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/moderate/interactive",
+      "prior_median_ms": 20.247128,
+      "current_median_ms": 23.149742500000002,
+      "prior_p99_ms": 24.027803740000003,
+      "current_p99_ms": 32.03369246000012,
+      "cross_node_ratio_for_internal_review": 1.1433593198995928
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/moderate/interactive-login",
+      "prior_median_ms": 20.561704499999998,
+      "current_median_ms": 23.0776635,
+      "prior_p99_ms": 25.522235010000003,
+      "current_p99_ms": 33.01135177000001,
+      "cross_node_ratio_for_internal_review": 1.1223614024800328
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/function-string",
+      "prior_median_ms": 13.659471,
+      "current_median_ms": 15.042337499999999,
+      "prior_p99_ms": 14.47687713,
+      "current_p99_ms": 19.8802976,
+      "cross_node_ratio_for_internal_review": 1.101238657046089
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/command-capture",
+      "prior_median_ms": 14.694373500000001,
+      "current_median_ms": 15.7518715,
+      "prior_p99_ms": 15.627400170000001,
+      "current_p99_ms": 20.00297159,
+      "cross_node_ratio_for_internal_review": 1.0719661848802196
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/file-roundtrip",
+      "prior_median_ms": 16.030719,
+      "current_median_ms": 17.178934,
+      "prior_p99_ms": 19.28269459,
+      "current_p99_ms": 22.882501819999998,
+      "cross_node_ratio_for_internal_review": 1.0716259202098173
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/native-sum",
+      "prior_median_ms": 14.0141515,
+      "current_median_ms": 14.9496985,
+      "prior_p99_ms": 14.61297834,
+      "current_p99_ms": 19.190664400000003,
+      "cross_node_ratio_for_internal_review": 1.0667573059988684
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/external-100",
+      "prior_median_ms": 91.6233385,
+      "current_median_ms": 99.762448,
+      "prior_p99_ms": 94.29158831999999,
+      "current_p99_ms": 118.12362592999999,
+      "cross_node_ratio_for_internal_review": 1.0888322738862
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nu/bare/short-pipeline",
+      "prior_median_ms": 15.733142999999998,
+      "current_median_ms": 17.7744605,
+      "prior_p99_ms": 17.331226240000003,
+      "current_p99_ms": 22.690286399999998,
+      "cross_node_ratio_for_internal_review": 1.129746325956613
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/immediate-exit",
+      "prior_median_ms": 2.2685415,
+      "current_median_ms": 2.664791,
+      "prior_p99_ms": 4.222814120000001,
+      "current_p99_ms": 4.156928120000004,
+      "cross_node_ratio_for_internal_review": 1.1746714794505633
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/trivial-command",
+      "prior_median_ms": 2.1101785,
+      "current_median_ms": 2.4680195,
+      "prior_p99_ms": 2.8900110900000002,
+      "current_p99_ms": 3.9048734700000023,
+      "cross_node_ratio_for_internal_review": 1.1695785451325564
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/interactive",
+      "prior_median_ms": 1.9024855,
+      "current_median_ms": 2.3111990000000002,
+      "prior_p99_ms": 2.3413308200000005,
+      "current_p99_ms": 3.720855000000013,
+      "cross_node_ratio_for_internal_review": 1.2148313351139866
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/empty/interactive",
+      "prior_median_ms": 1.9008045,
+      "current_median_ms": 2.281027,
+      "prior_p99_ms": 2.4913320600000017,
+      "current_p99_ms": 3.924478460000011,
+      "cross_node_ratio_for_internal_review": 1.2000324073306854
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/light/interactive",
+      "prior_median_ms": 2.2652710000000003,
+      "current_median_ms": 2.7661914999999997,
+      "prior_p99_ms": 2.915549450000003,
+      "current_p99_ms": 7.077801560000007,
+      "cross_node_ratio_for_internal_review": 1.22113049608634
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/moderate/interactive",
+      "prior_median_ms": 2.7424205,
+      "current_median_ms": 3.2844325,
+      "prior_p99_ms": 4.1493734500000015,
+      "current_p99_ms": 5.724533720000006,
+      "cross_node_ratio_for_internal_review": 1.1976400045142601
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/function-string",
+      "prior_median_ms": 2.2338415,
+      "current_median_ms": 2.8386705,
+      "prior_p99_ms": 2.33047451,
+      "current_p99_ms": 5.26689045,
+      "cross_node_ratio_for_internal_review": 1.2707573478243646
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/command-capture",
+      "prior_median_ms": 3.4965954999999997,
+      "current_median_ms": 4.3432675,
+      "prior_p99_ms": 3.59858661,
+      "current_p99_ms": 4.99747219,
+      "cross_node_ratio_for_internal_review": 1.2421418205222765
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/file-roundtrip",
+      "prior_median_ms": 4.948511,
+      "current_median_ms": 5.891477,
+      "prior_p99_ms": 5.1676796199999995,
+      "current_p99_ms": 7.43138431,
+      "cross_node_ratio_for_internal_review": 1.1905555024531622
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/native-sum",
+      "prior_median_ms": 3.055017,
+      "current_median_ms": 3.672892,
+      "prior_p99_ms": 3.6554153400000002,
+      "current_p99_ms": 4.49494613,
+      "cross_node_ratio_for_internal_review": 1.202249283719207
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/external-100",
+      "prior_median_ms": 93.148973,
+      "current_median_ms": 101.505161,
+      "prior_p99_ms": 102.29978546,
+      "current_p99_ms": 120.7280979,
+      "cross_node_ratio_for_internal_review": 1.0897077845399326
+    },
+    {
+      "file": "shell-repeated.json",
+      "id": "nift/bare/short-pipeline",
+      "prior_median_ms": 4.9609974999999995,
+      "current_median_ms": 5.5282155,
+      "prior_p99_ms": 5.234223930000001,
+      "current_p99_ms": 6.64380492,
+      "cross_node_ratio_for_internal_review": 1.1143354738638753
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/immediate-exit",
+      "prior_median_ms": 1.6484375,
+      "current_median_ms": 2.0046865,
+      "prior_p99_ms": 2.01634182,
+      "current_p99_ms": 3.24954762,
+      "cross_node_ratio_for_internal_review": 1.2161131374407583
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/trivial-command",
+      "prior_median_ms": 1.5290925,
+      "current_median_ms": 1.8741539999999999,
+      "prior_p99_ms": 1.9682278400000002,
+      "current_p99_ms": 3.5337055300000006,
+      "cross_node_ratio_for_internal_review": 1.2256642420259074
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/interactive",
+      "prior_median_ms": 1.9649345,
+      "current_median_ms": 2.66704,
+      "prior_p99_ms": 2.66609626,
+      "current_p99_ms": 5.420639030000002,
+      "cross_node_ratio_for_internal_review": 1.357317508547995
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/interactive-login",
+      "prior_median_ms": 1.906053,
+      "current_median_ms": 2.55551,
+      "prior_p99_ms": 2.3836052100000003,
+      "current_p99_ms": 4.331459779999999,
+      "cross_node_ratio_for_internal_review": 1.340733966998819
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/empty/interactive",
+      "prior_median_ms": 3.5553489999999996,
+      "current_median_ms": 4.9396055,
+      "prior_p99_ms": 4.657337260000001,
+      "current_p99_ms": 7.18825857,
+      "cross_node_ratio_for_internal_review": 1.3893447591221004
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/empty/interactive-login",
+      "prior_median_ms": 17.5985185,
+      "current_median_ms": 22.131400499999998,
+      "prior_p99_ms": 23.120698920000002,
+      "current_p99_ms": 29.119289020000004,
+      "cross_node_ratio_for_internal_review": 1.2575717950349057
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/light/interactive",
+      "prior_median_ms": 3.640473,
+      "current_median_ms": 4.440929499999999,
+      "prior_p99_ms": 4.23575122,
+      "current_p99_ms": 7.4254071,
+      "cross_node_ratio_for_internal_review": 1.2198770599314976
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/light/interactive-login",
+      "prior_median_ms": 18.019905,
+      "current_median_ms": 21.634176500000002,
+      "prior_p99_ms": 25.902204670000003,
+      "current_p99_ms": 33.28597578,
+      "cross_node_ratio_for_internal_review": 1.2005710629440056
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/moderate/interactive",
+      "prior_median_ms": 3.8962785,
+      "current_median_ms": 4.7807955,
+      "prior_p99_ms": 6.356827830000002,
+      "current_p99_ms": 7.656552080000001,
+      "cross_node_ratio_for_internal_review": 1.2270158562844005
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/moderate/interactive-login",
+      "prior_median_ms": 17.9266065,
+      "current_median_ms": 22.770614000000002,
+      "prior_p99_ms": 22.165211730000003,
+      "current_p99_ms": 33.07923968,
+      "cross_node_ratio_for_internal_review": 1.2702132999907152
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/function-string",
+      "prior_median_ms": 1.6388465,
+      "current_median_ms": 2.3411595,
+      "prior_p99_ms": 1.93098383,
+      "current_p99_ms": 3.29455868,
+      "cross_node_ratio_for_internal_review": 1.4285410500617353
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/command-capture",
+      "prior_median_ms": 2.81327,
+      "current_median_ms": 4.020594,
+      "prior_p99_ms": 3.30415886,
+      "current_p99_ms": 5.1986586400000006,
+      "cross_node_ratio_for_internal_review": 1.4291532629289048
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/file-roundtrip",
+      "prior_median_ms": 3.7382215,
+      "current_median_ms": 4.4439625,
+      "prior_p99_ms": 4.2246573199999995,
+      "current_p99_ms": 7.33672393,
+      "cross_node_ratio_for_internal_review": 1.1887905786214112
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/native-sum",
+      "prior_median_ms": 4.8433585,
+      "current_median_ms": 5.7215995,
+      "prior_p99_ms": 6.109560070000001,
+      "current_p99_ms": 7.56394462,
+      "cross_node_ratio_for_internal_review": 1.1813289270245018
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/external-100",
+      "prior_median_ms": 82.58139449999999,
+      "current_median_ms": 92.4098245,
+      "prior_p99_ms": 94.39539412,
+      "current_p99_ms": 104.99984058999999,
+      "cross_node_ratio_for_internal_review": 1.1190150645857646
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "bash/bare/short-pipeline",
+      "prior_median_ms": 4.0605345,
+      "current_median_ms": 4.820496500000001,
+      "prior_p99_ms": 4.660706790000001,
+      "current_p99_ms": 6.39974629,
+      "cross_node_ratio_for_internal_review": 1.187158119208198
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/immediate-exit",
+      "prior_median_ms": 2.1340845,
+      "current_median_ms": 2.777574,
+      "prior_p99_ms": 2.78204857,
+      "current_p99_ms": 3.55364626,
+      "cross_node_ratio_for_internal_review": 1.3015295317500313
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/trivial-command",
+      "prior_median_ms": 2.0286435000000003,
+      "current_median_ms": 2.6759190000000004,
+      "prior_p99_ms": 2.5795674900000005,
+      "current_p99_ms": 3.9753747000000006,
+      "cross_node_ratio_for_internal_review": 1.3190681359243257
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/interactive",
+      "prior_median_ms": 2.717633,
+      "current_median_ms": 3.535157,
+      "prior_p99_ms": 3.83338955,
+      "current_p99_ms": 5.081106800000001,
+      "cross_node_ratio_for_internal_review": 1.3008220756813005
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/interactive-login",
+      "prior_median_ms": 2.630785,
+      "current_median_ms": 3.5301045,
+      "prior_p99_ms": 3.61023205,
+      "current_p99_ms": 4.5689359000000005,
+      "cross_node_ratio_for_internal_review": 1.3418445444990754
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/empty/interactive",
+      "prior_median_ms": 511.45676349999997,
+      "current_median_ms": 580.335072,
+      "prior_p99_ms": 560.49264422,
+      "current_p99_ms": 666.02466947,
+      "cross_node_ratio_for_internal_review": 1.1346708332267466
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/empty/interactive-login",
+      "prior_median_ms": 511.124588,
+      "current_median_ms": 578.6682295,
+      "prior_p99_ms": 543.4173819800001,
+      "current_p99_ms": 760.1591120300002,
+      "cross_node_ratio_for_internal_review": 1.132147118502544
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/light/interactive",
+      "prior_median_ms": 514.5216395,
+      "current_median_ms": 572.0337145000001,
+      "prior_p99_ms": 611.50134745,
+      "current_p99_ms": 696.8635237600001,
+      "cross_node_ratio_for_internal_review": 1.1117777574056729
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/light/interactive-login",
+      "prior_median_ms": 511.256683,
+      "current_median_ms": 572.527325,
+      "prior_p99_ms": 604.51188907,
+      "current_p99_ms": 631.8040213400001,
+      "cross_node_ratio_for_internal_review": 1.1198432099517417
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/moderate/interactive",
+      "prior_median_ms": 514.3436194999999,
+      "current_median_ms": 586.2227685,
+      "prior_p99_ms": 555.29927135,
+      "current_p99_ms": 670.47245634,
+      "cross_node_ratio_for_internal_review": 1.1397492770880968
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/moderate/interactive-login",
+      "prior_median_ms": 511.5306505,
+      "current_median_ms": 572.008863,
+      "prior_p99_ms": 566.3648176900001,
+      "current_p99_ms": 652.97794882,
+      "cross_node_ratio_for_internal_review": 1.1182298899213274
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/function-string",
+      "prior_median_ms": 2.3330200000000003,
+      "current_median_ms": 2.49877,
+      "prior_p99_ms": 2.85519163,
+      "current_p99_ms": 2.8582577899999997,
+      "cross_node_ratio_for_internal_review": 1.0710452546484812
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/command-capture",
+      "prior_median_ms": 3.3753965,
+      "current_median_ms": 3.672291,
+      "prior_p99_ms": 4.18612988,
+      "current_p99_ms": 4.4470844,
+      "cross_node_ratio_for_internal_review": 1.0879584072567474
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/file-roundtrip",
+      "prior_median_ms": 4.2357875,
+      "current_median_ms": 4.789065,
+      "prior_p99_ms": 4.33064113,
+      "current_p99_ms": 4.9942044899999996,
+      "cross_node_ratio_for_internal_review": 1.1306197489841028
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/native-sum",
+      "prior_median_ms": 3.1842734999999998,
+      "current_median_ms": 3.603361,
+      "prior_p99_ms": 4.5922345799999995,
+      "current_p99_ms": 4.42107614,
+      "cross_node_ratio_for_internal_review": 1.1316116533331702
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/external-100",
+      "prior_median_ms": 97.869282,
+      "current_median_ms": 101.0187135,
+      "prior_p99_ms": 106.00766454,
+      "current_p99_ms": 114.13751851,
+      "cross_node_ratio_for_internal_review": 1.0321799796181197
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "zsh/bare/short-pipeline",
+      "prior_median_ms": 4.62674,
+      "current_median_ms": 5.028444,
+      "prior_p99_ms": 5.32231289,
+      "current_p99_ms": 5.63921588,
+      "cross_node_ratio_for_internal_review": 1.0868222549786677
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/immediate-exit",
+      "prior_median_ms": 2.687022,
+      "current_median_ms": 3.4376154999999997,
+      "prior_p99_ms": 3.01326184,
+      "current_p99_ms": 5.07523974,
+      "cross_node_ratio_for_internal_review": 1.2793402882447558
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/trivial-command",
+      "prior_median_ms": 2.438876,
+      "current_median_ms": 2.9393665,
+      "prior_p99_ms": 2.79248108,
+      "current_p99_ms": 4.712432870000001,
+      "cross_node_ratio_for_internal_review": 1.2052135901948275
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/interactive",
+      "prior_median_ms": 18.7448335,
+      "current_median_ms": 21.8368205,
+      "prior_p99_ms": 23.180384450000002,
+      "current_p99_ms": 33.3615332,
+      "cross_node_ratio_for_internal_review": 1.1649514251486952
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/interactive-login",
+      "prior_median_ms": 20.1212715,
+      "current_median_ms": 22.610097500000002,
+      "prior_p99_ms": 23.941308160000002,
+      "current_p99_ms": 33.69719404,
+      "cross_node_ratio_for_internal_review": 1.1236912885947592
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/empty/interactive",
+      "prior_median_ms": 69.046783,
+      "current_median_ms": 78.904897,
+      "prior_p99_ms": 78.51847225,
+      "current_p99_ms": 109.31732845,
+      "cross_node_ratio_for_internal_review": 1.1427744142692353
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/empty/interactive-login",
+      "prior_median_ms": 64.700047,
+      "current_median_ms": 72.398996,
+      "prior_p99_ms": 73.16005834,
+      "current_p99_ms": 95.99178403000002,
+      "cross_node_ratio_for_internal_review": 1.1189944885202325
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/light/interactive",
+      "prior_median_ms": 65.085741,
+      "current_median_ms": 75.6721805,
+      "prior_p99_ms": 72.64434284000001,
+      "current_p99_ms": 102.03900508,
+      "cross_node_ratio_for_internal_review": 1.1626537446965535
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/light/interactive-login",
+      "prior_median_ms": 61.496571,
+      "current_median_ms": 71.80460149999999,
+      "prior_p99_ms": 69.92860219,
+      "current_p99_ms": 87.35568259,
+      "cross_node_ratio_for_internal_review": 1.1676195978471708
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/moderate/interactive",
+      "prior_median_ms": 64.77304050000001,
+      "current_median_ms": 73.3219155,
+      "prior_p99_ms": 73.46396757000001,
+      "current_p99_ms": 95.19913816,
+      "cross_node_ratio_for_internal_review": 1.1319819933418132
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/moderate/interactive-login",
+      "prior_median_ms": 62.4100675,
+      "current_median_ms": 70.776278,
+      "prior_p99_ms": 71.60757682,
+      "current_p99_ms": 91.03231773,
+      "cross_node_ratio_for_internal_review": 1.1340522584757662
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/function-string",
+      "prior_median_ms": 3.712415,
+      "current_median_ms": 3.4030905000000002,
+      "prior_p99_ms": 4.64996395,
+      "current_p99_ms": 7.86107636,
+      "cross_node_ratio_for_internal_review": 0.9166783616594589
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/command-capture",
+      "prior_median_ms": 4.102674,
+      "current_median_ms": 4.654912,
+      "prior_p99_ms": 4.3583606,
+      "current_p99_ms": 5.642741760000001,
+      "cross_node_ratio_for_internal_review": 1.1346044067844532
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/file-roundtrip",
+      "prior_median_ms": 4.634325499999999,
+      "current_median_ms": 5.08153,
+      "prior_p99_ms": 5.20559498,
+      "current_p99_ms": 6.937573120000001,
+      "cross_node_ratio_for_internal_review": 1.0964982930094143
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/native-sum",
+      "prior_median_ms": 102.7066945,
+      "current_median_ms": 123.7601825,
+      "prior_p99_ms": 123.66965537,
+      "current_p99_ms": 174.60190263,
+      "cross_node_ratio_for_internal_review": 1.2049865211074435
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/external-100",
+      "prior_median_ms": 73.3635295,
+      "current_median_ms": 84.1755955,
+      "prior_p99_ms": 83.73552903000001,
+      "current_p99_ms": 91.51357802,
+      "cross_node_ratio_for_internal_review": 1.147376578985339
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "fish/bare/short-pipeline",
+      "prior_median_ms": 4.5926805,
+      "current_median_ms": 5.131663,
+      "prior_p99_ms": 5.538171709999999,
+      "current_p99_ms": 6.35201996,
+      "cross_node_ratio_for_internal_review": 1.1173568463993957
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/immediate-exit",
+      "prior_median_ms": 13.3703895,
+      "current_median_ms": 17.973478,
+      "prior_p99_ms": 15.54251309,
+      "current_p99_ms": 27.70659057,
+      "cross_node_ratio_for_internal_review": 1.3442748246040253
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/trivial-command",
+      "prior_median_ms": 13.09162,
+      "current_median_ms": 15.720986,
+      "prior_p99_ms": 17.85454323,
+      "current_p99_ms": 19.319316060000002,
+      "cross_node_ratio_for_internal_review": 1.2008434403076165
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/interactive",
+      "prior_median_ms": 16.752195,
+      "current_median_ms": 20.4975825,
+      "prior_p99_ms": 22.85514783,
+      "current_p99_ms": 27.99073678,
+      "cross_node_ratio_for_internal_review": 1.2235759254235041
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/interactive-login",
+      "prior_median_ms": 17.477875500000003,
+      "current_median_ms": 19.835853,
+      "prior_p99_ms": 20.36507627,
+      "current_p99_ms": 31.536896810000002,
+      "cross_node_ratio_for_internal_review": 1.1349121350589777
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/empty/interactive",
+      "prior_median_ms": 19.674285,
+      "current_median_ms": 23.1681315,
+      "prior_p99_ms": 22.87989009,
+      "current_p99_ms": 42.82493095000002,
+      "cross_node_ratio_for_internal_review": 1.177584420475763
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/empty/interactive-login",
+      "prior_median_ms": 19.7790235,
+      "current_median_ms": 23.479541500000003,
+      "prior_p99_ms": 24.774320350000004,
+      "current_p99_ms": 34.32844349,
+      "cross_node_ratio_for_internal_review": 1.1870930584616577
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/light/interactive",
+      "prior_median_ms": 19.760548,
+      "current_median_ms": 22.5328785,
+      "prior_p99_ms": 26.4995885,
+      "current_p99_ms": 47.225369950000015,
+      "cross_node_ratio_for_internal_review": 1.1402962357116817
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/light/interactive-login",
+      "prior_median_ms": 19.738058000000002,
+      "current_median_ms": 22.346313000000002,
+      "prior_p99_ms": 25.461303590000004,
+      "current_p99_ms": 36.6359044,
+      "cross_node_ratio_for_internal_review": 1.1321434459256325
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/moderate/interactive",
+      "prior_median_ms": 20.210119,
+      "current_median_ms": 23.582649,
+      "prior_p99_ms": 25.7282227,
+      "current_p99_ms": 38.84268371000002,
+      "cross_node_ratio_for_internal_review": 1.1668733370644677
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/moderate/interactive-login",
+      "prior_median_ms": 20.406299500000003,
+      "current_median_ms": 24.019642,
+      "prior_p99_ms": 26.189330090000002,
+      "current_p99_ms": 35.29285809000001,
+      "cross_node_ratio_for_internal_review": 1.1770699533249522
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/function-string",
+      "prior_median_ms": 14.335788,
+      "current_median_ms": 17.830801,
+      "prior_p99_ms": 17.434538489999998,
+      "current_p99_ms": 28.516465580000002,
+      "cross_node_ratio_for_internal_review": 1.2437963647341883
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/command-capture",
+      "prior_median_ms": 14.79389,
+      "current_median_ms": 17.21463,
+      "prior_p99_ms": 18.27455433,
+      "current_p99_ms": 27.74353187,
+      "cross_node_ratio_for_internal_review": 1.1636310666092555
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/file-roundtrip",
+      "prior_median_ms": 15.9595175,
+      "current_median_ms": 19.603635500000003,
+      "prior_p99_ms": 18.774834860000002,
+      "current_p99_ms": 26.05128476,
+      "cross_node_ratio_for_internal_review": 1.228335098476505
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/native-sum",
+      "prior_median_ms": 13.987296,
+      "current_median_ms": 18.873536,
+      "prior_p99_ms": 18.829636609999998,
+      "current_p99_ms": 22.04713482,
+      "cross_node_ratio_for_internal_review": 1.3493341386355162
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/external-100",
+      "prior_median_ms": 90.71717000000001,
+      "current_median_ms": 109.438861,
+      "prior_p99_ms": 111.53807116,
+      "current_p99_ms": 128.62367221,
+      "cross_node_ratio_for_internal_review": 1.2063742839420586
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nu/bare/short-pipeline",
+      "prior_median_ms": 15.438293999999999,
+      "current_median_ms": 18.7902345,
+      "prior_p99_ms": 18.63686869,
+      "current_p99_ms": 22.59114511,
+      "cross_node_ratio_for_internal_review": 1.21711858188476
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/immediate-exit",
+      "prior_median_ms": 2.3685785,
+      "current_median_ms": 2.8367055,
+      "prior_p99_ms": 3.37695168,
+      "current_p99_ms": 5.475674750000001,
+      "cross_node_ratio_for_internal_review": 1.1976404835220786
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/trivial-command",
+      "prior_median_ms": 2.119565,
+      "current_median_ms": 2.434986,
+      "prior_p99_ms": 4.4748516400000025,
+      "current_p99_ms": 4.577092090000002,
+      "cross_node_ratio_for_internal_review": 1.148814025519387
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/interactive",
+      "prior_median_ms": 1.887622,
+      "current_median_ms": 2.1711799999999997,
+      "prior_p99_ms": 2.44854664,
+      "current_p99_ms": 4.560808630000001,
+      "cross_node_ratio_for_internal_review": 1.150219694409156
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/empty/interactive",
+      "prior_median_ms": 1.9017055,
+      "current_median_ms": 2.365751,
+      "prior_p99_ms": 2.5352677600000004,
+      "current_p99_ms": 11.88546728000001,
+      "cross_node_ratio_for_internal_review": 1.2440154377215609
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/light/interactive",
+      "prior_median_ms": 2.231519,
+      "current_median_ms": 2.831769,
+      "prior_p99_ms": 2.5863377400000003,
+      "current_p99_ms": 4.639699090000001,
+      "cross_node_ratio_for_internal_review": 1.2689871786885973
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/moderate/interactive",
+      "prior_median_ms": 2.7223245,
+      "current_median_ms": 3.5153425,
+      "prior_p99_ms": 3.28197063,
+      "current_p99_ms": 5.28944743,
+      "cross_node_ratio_for_internal_review": 1.2913017900694792
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/function-string",
+      "prior_median_ms": 2.2346125,
+      "current_median_ms": 3.0395135,
+      "prior_p99_ms": 2.9116821699999997,
+      "current_p99_ms": 3.9886391700000003,
+      "cross_node_ratio_for_internal_review": 1.3601971258999044
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/command-capture",
+      "prior_median_ms": 3.4411329999999998,
+      "current_median_ms": 5.1311255,
+      "prior_p99_ms": 4.49900398,
+      "current_p99_ms": 7.272065080000001,
+      "cross_node_ratio_for_internal_review": 1.4911151356253884
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/file-roundtrip",
+      "prior_median_ms": 4.912324999999999,
+      "current_median_ms": 6.25403,
+      "prior_p99_ms": 7.39308107,
+      "current_p99_ms": 7.85855729,
+      "cross_node_ratio_for_internal_review": 1.2731303405210366
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/native-sum",
+      "prior_median_ms": 3.0578065,
+      "current_median_ms": 4.1821865,
+      "prior_p99_ms": 4.20845804,
+      "current_p99_ms": 4.60627362,
+      "cross_node_ratio_for_internal_review": 1.3677080286146297
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/external-100",
+      "prior_median_ms": 92.0962845,
+      "current_median_ms": 112.89717350000001,
+      "prior_p99_ms": 107.27369111,
+      "current_p99_ms": 148.05471038000002,
+      "cross_node_ratio_for_internal_review": 1.2258602408656347
+    },
+    {
+      "file": "shell-application-cold.json",
+      "id": "nift/bare/short-pipeline",
+      "prior_median_ms": 4.895579,
+      "current_median_ms": 7.825931,
+      "prior_p99_ms": 6.542737870000001,
+      "current_p99_ms": 12.81498146,
+      "cross_node_ratio_for_internal_review": 1.5985710781094535
+    }
+  ]
+}

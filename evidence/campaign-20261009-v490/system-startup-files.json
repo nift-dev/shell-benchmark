@@ -1,0 +1,87 @@
+[
+  {
+    "path": "/etc/bash.bashrc",
+    "sha256": "29128d49b590338131373ec431a59c0b5318330050aac9ac61d5098517ac9a25",
+    "bytes": 2319
+  },
+  {
+    "path": "/etc/profile",
+    "sha256": "66f4510566d71c4a49717f54a29d8c4268fd332a49595dbe78c072e06e5ca60f",
+    "bytes": 582
+  },
+  {
+    "path": "/etc/profile.d/01-locale-fix.sh",
+    "sha256": "68622f3b699382e43c6ac6d2371d948df6a44480ec4d26f53c44666a21fc571c",
+    "bytes": 96
+  },
+  {
+    "path": "/etc/profile.d/Z97-byobu.sh",
+    "sha256": "7ea06e0389ae5bbc1aeb9bd52af9cac4ac10916eedf8f4036d1505e5161225fb",
+    "bytes": 1557
+  },
+  {
+    "path": "/etc/profile.d/Z99-cloud-locale-test.sh",
+    "sha256": "54e9b3505ab84c1e2822aff1cbbdb71b46e2afcdb653f442e21ff3e8a31cbb1f",
+    "bytes": 3396
+  },
+  {
+    "path": "/etc/profile.d/Z99-cloudinit-warnings.sh",
+    "sha256": "3a563059602150f49886ca057fc75efe5b13afa97641f153f9895dcae6cf3fd0",
+    "bytes": 841
+  },
+  {
+    "path": "/etc/profile.d/apps-bin-path.sh",
+    "sha256": "7356f238f01a40640478e9e424ccc8e11be042c37fadf9e1b338d61edc3cb107",
+    "bytes": 840
+  },
+  {
+    "path": "/etc/profile.d/bash_completion.sh",
+    "sha256": "0aefd1d6da5bd2ebe7481a88c8033d0ef2641625e3ffc14c9a895ab0944465dc",
+    "bytes": 726
+  },
+  {
+    "path": "/etc/profile.d/gawk.csh",
+    "sha256": "9ba2af9853121df6dd5edff9254a2946e39eab8dc6513348fea28f739ee96648",
+    "bytes": 1107
+  },
+  {
+    "path": "/etc/profile.d/gawk.sh",
+    "sha256": "70621a3b586d3d523b020e76977633b444a70013ba50e1ea901a3a07a676f15f",
+    "bytes": 757
+  },
+  {
+    "path": "/etc/profile.d/lish.sh",
+    "sha256": "7fde0de3b94a9a4ddf19043c16b23a9b9cb20097361cef7399f757b4b0c38735",
+    "bytes": 1110
+  },
+  {
+    "path": "/etc/zsh/newuser.zshrc.recommended",
+    "sha256": "07bc40b1c2f6b9e3a2421fbddaed9aadae6dfe00a03cf53689adfdcda1a40b67",
+    "bytes": 1295
+  },
+  {
+    "path": "/etc/zsh/zlogin",
+    "sha256": "055a943d9d0563e0af05b14e58277aa35e2a2976f8c490691fde084a9fea3eb8",
+    "bytes": 344
+  },
+  {
+    "path": "/etc/zsh/zlogout",
+    "sha256": "28eb4b1a6ae7339b19e0cf0c62a592b7392278445302a086525bdf618dd0fcfd",
+    "bytes": 58
+  },
+  {
+    "path": "/etc/zsh/zprofile",
+    "sha256": "354c0aa4f3802528bddbfac7975becd3b4c8d92a865cc9495097c66906168c74",
+    "bytes": 264
+  },
+  {
+    "path": "/etc/zsh/zshenv",
+    "sha256": "a01e6479dc788f17d26eedd7d32bbb6843400a6bba0fc840bdc0e9cf89030d66",
+    "bytes": 623
+  },
+  {
+    "path": "/etc/zsh/zshrc",
+    "sha256": "b5204b4125dbb318195b95b54ac329c02bb1867b46d573d40f951c77656b3822",
+    "bytes": 3900
+  }
+]

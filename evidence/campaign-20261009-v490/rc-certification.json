@@ -1,0 +1,199 @@
+{
+  "machine": {
+    "kernel": "6.8.0-134-generic",
+    "os_release": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+    "cpuinfo": "processor\t: 0\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7542 32-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2899.998\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 0\ncpu cores\t: 4\napicid\t\t: 0\ninitial apicid\t: 0\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 5799.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 1\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7542 32-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2899.998\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 1\ncpu cores\t: 4\napicid\t\t: 1\ninitial apicid\t: 1\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 5799.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 2\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7542 32-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2899.998\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 2\ncpu cores\t: 4\napicid\t\t: 2\ninitial apicid\t: 2\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 5799.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 3\nvendor_id\t: AuthenticAMD\ncpu family\t: 23\nmodel\t\t: 49\nmodel name\t: AMD EPYC 7542 32-Core Processor\nstepping\t: 0\nmicrocode\t: 0x830107c\ncpu MHz\t\t: 2899.998\ncache size\t: 512 KB\nphysical id\t: 0\nsiblings\t: 4\ncore id\t\t: 3\ncpu cores\t: 4\napicid\t\t: 3\ninitial apicid\t: 3\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 16\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr wbnoinvd arat umip rdpid overflow_recov succor\nbugs\t\t: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso ibpb_no_ret\nbogomips\t: 5799.99\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 48 bits physical, 48 bits virtual\npower management:\n\n",
+    "meminfo": "MemTotal:        8131788 kB\nMemFree:         6376748 kB\nMemAvailable:    7678072 kB\nBuffers:           47396 kB\nCached:          1436128 kB\nSwapCached:            0 kB\nActive:           208476 kB\nInactive:        1313672 kB\nActive(anon):      39600 kB\nInactive(anon):        0 kB\nActive(file):     168876 kB\nInactive(file):  1313672 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:        507900 kB\nSwapFree:         507900 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               868 kB\nWriteback:             0 kB\nAnonPages:         38664 kB\nMapped:            46212 kB\nShmem:               972 kB\nKReclaimable:      87404 kB\nSlab:             143612 kB\nSReclaimable:      87404 kB\nSUnreclaim:        56208 kB\nKernelStack:        2416 kB\nPageTables:         2140 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     4573792 kB\nCommitted_AS:     149668 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       16448 kB\nVmallocChunk:          0 kB\nPercpu:             2096 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      114548 kB\nDirectMap2M:     4079616 kB\nDirectMap1G:     6291456 kB\n",
+    "cpu_affinity": [
+      0
+    ],
+    "python": "3.12.3",
+    "revision": "7f0742ab965db3c6d76a2dcbd9c7bfaf84457494",
+    "dirty": false,
+    "cache_policy": "OS caches uncontrolled; no machine-cold claim",
+    "rss_policy": "Linux wait4 waited-child high-water RSS; not aggregate process-tree RSS"
+  },
+  "all_state_valid": true,
+  "cases": [
+    {
+      "shell": "bash",
+      "scenario": "light",
+      "login": false,
+      "variables": 8,
+      "functions": 8,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "bash",
+      "scenario": "light",
+      "login": true,
+      "variables": 8,
+      "functions": 8,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "bash",
+      "scenario": "moderate",
+      "login": false,
+      "variables": 32,
+      "functions": 32,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "bash",
+      "scenario": "moderate",
+      "login": true,
+      "variables": 32,
+      "functions": 32,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "zsh",
+      "scenario": "light",
+      "login": false,
+      "variables": 8,
+      "functions": 8,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "zsh",
+      "scenario": "light",
+      "login": true,
+      "variables": 8,
+      "functions": 8,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "zsh",
+      "scenario": "moderate",
+      "login": false,
+      "variables": 32,
+      "functions": 32,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "zsh",
+      "scenario": "moderate",
+      "login": true,
+      "variables": 32,
+      "functions": 32,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "fish",
+      "scenario": "light",
+      "login": false,
+      "variables": 8,
+      "functions": 8,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "fish",
+      "scenario": "light",
+      "login": true,
+      "variables": 8,
+      "functions": 8,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "fish",
+      "scenario": "moderate",
+      "login": false,
+      "variables": 32,
+      "functions": 32,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "fish",
+      "scenario": "moderate",
+      "login": true,
+      "variables": 32,
+      "functions": 32,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "nu",
+      "scenario": "light",
+      "login": false,
+      "variables": 8,
+      "functions": 8,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "nu",
+      "scenario": "light",
+      "login": true,
+      "variables": 8,
+      "functions": 8,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "nu",
+      "scenario": "moderate",
+      "login": false,
+      "variables": 32,
+      "functions": 32,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "nu",
+      "scenario": "moderate",
+      "login": true,
+      "variables": 32,
+      "functions": 32,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "nift",
+      "scenario": "light",
+      "login": false,
+      "variables": 8,
+      "functions": 8,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    },
+    {
+      "shell": "nift",
+      "scenario": "moderate",
+      "login": false,
+      "variables": 32,
+      "functions": 32,
+      "conditional": true,
+      "path": true,
+      "correct": true
+    }
+  ]
+}

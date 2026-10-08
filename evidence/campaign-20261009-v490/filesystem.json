@@ -1,0 +1,10 @@
+{
+   "filesystems": [
+      {
+         "target": "/",
+         "source": "/dev/sda",
+         "fstype": "ext4",
+         "options": "rw,relatime,errors=remount-ro"
+      }
+   ]
+}

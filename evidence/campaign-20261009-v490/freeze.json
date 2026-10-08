@@ -1,0 +1,11 @@
+{
+  "nift": "aaadeb31219251b7cc02a62fbf75360ac3e11aaf",
+  "shell-benchmark": "7f0742ab965db3c6d76a2dcbd9c7bfaf84457494",
+  "scripting-benchmark": "94772ff14db177b05a7b84dc3360ca92853af154",
+  "lab": "1fc52c002e58bddb88958d79ccce06fd64bfe519",
+  "lab/public": "824e0d97a224e40e970dbfcd9adf7c777ddcb362",
+  "series": "20261009-v490",
+  "version": "4.9.0",
+  "nift_binary_sha256": "72d7d2b17cb96cf65781d153338b533013fa2f095c0a91798effdc62a0f978b7",
+  "compiler_build": "Native Make; GCC/G++ 13.3.0, make -j2, identical default flags"
+}

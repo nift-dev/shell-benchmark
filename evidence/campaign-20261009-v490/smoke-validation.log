@@ -1,0 +1,16 @@
+Certified complete synthetic RC state in 18 cases.
+{'process-floor': 0.802227, 'pty-small-heap': 0.915901, 'pty-128MiB-heap': 0.8711899999999999}
+{'bash/light': 0.143, 'bash/moderate': 0.3385, 'zsh/light': 0.1415014265, 'zsh/moderate': 0.3427267075}
+round 1
+round 2
+round 3
+round 4
+round 5
+round 6
+round 1
+round 2
+round 3
+round 4
+round 5
+round 6
+SMOKE_PASS

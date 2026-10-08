@@ -1,0 +1,3 @@
+# Official shell series 20261009-v490
+
+Nift 4.9.0 release preparation, exact source `aaadeb31219251b7cc02a62fbf75360ac3e11aaf`. Measured suite `7f0742ab965db3c6d76a2dcbd9c7bfaf84457494`. Frozen native build, CPU 0, unchanged workload/oracles and sample treatment. Raw JSON includes every observation and warmup. Smoke results are separate from official samples. Shared virtual CPUs and uncontrolled OS caches limit cross-node attribution. Previous official evidence remains unchanged. See run-identity.json, validation.json and exact setup/smoke/official scripts for reproduction. Teardown follows live verification.
