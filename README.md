@@ -159,3 +159,7 @@ The `20261008-v480` series measures the Nift 4.8.0 development snapshot from fro
 ## Expanded shell workload layer
 
 The additive [workload methodology](docs/EXPANDED-SHELL-WORKLOADS.md) preserves the original startup/config suite and adds mixed filesystem operations, exact 100k selected create/delete, external baselines, process/pipeline scaling, native algorithms and mixed workflows. See `scripts/workload_campaign.py`, `schemas/shell-workloads.schema.json` and `scripts/validate_workloads.py`. Official results belong to a new immutable series; prior campaigns are unchanged.
+
+## Official expanded series: 9 October 2026
+
+The complete startup/configuration suite and additive workloads were measured together on one fresh node with Nift 4.10.0 development. All 293 jobs passed: 7,855 measured observations and 711 retained warmups. The measured suite is frozen at `fc7c4d93dcd525545f97e302501eb08e1b0f9f7e`. Full raw evidence, exact identities, validation and lifecycle records are maintained in [nift-experiments/lab-evidence](https://github.com/nift-experiments/lab-evidence/tree/main/benchmarks/shell/20261009-v4100-shell-expanded). [The Labs report](https://lab.nift.dev/benchmarks/shell/) preserves the original startup/configuration graph designs and adds substantial new workload sections. Historical series remain separate.
