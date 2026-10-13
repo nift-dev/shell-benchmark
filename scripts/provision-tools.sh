@@ -26,7 +26,12 @@ fetch https://github.com/fish-shell/fish-shell/releases/download/4.9.3/fish-4.9.
 printf '8f643d10ad1abb0ef7072764c01ceb5cf61b2d373fda400cf60f0bad69b7e095  fish.tar.xz\n' | sha256sum -c -
 mkdir -p "$TOOLS/fish"; tar -xf fish.tar.xz -C "$TOOLS/fish"
 ln -sf "$TOOLS/fish/fish" "$TOOLS/bin/fish"
-NIFT_VERSION=4.7.2 NIFT_INSTALL_DIR="$TOOLS/bin" sh "$ROOT/nift-installer.sh"
+if [ -n "${NIFT_BINARY:-}" ]; then
+  [ -x "$NIFT_BINARY" ] || { echo "NIFT_BINARY must be an executable source-built candidate" >&2; exit 1; }
+  if [ "$NIFT_BINARY" != "$TOOLS/bin/nift" ]; then install -m 0755 "$NIFT_BINARY" "$TOOLS/bin/nift"; fi
+else
+  NIFT_VERSION=4.7.2 NIFT_INSTALL_DIR="$TOOLS/bin" sh "$ROOT/nift-installer.sh"
+fi
 fetch https://github.com/gohugoio/hugo/releases/download/v0.167.0/hugo_0.167.0_linux-amd64.tar.gz hugo.tar.gz
 fetch https://github.com/gohugoio/hugo/releases/download/v0.167.0/hugo_0.167.0_checksums.txt hugo-checksums.txt
 hugo_sum=$(awk '$2=="hugo_0.167.0_linux-amd64.tar.gz" {print $1}' hugo-checksums.txt)

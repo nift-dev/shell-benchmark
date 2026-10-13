@@ -1,0 +1,42 @@
+{
+  "candidate_source_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "candidate_version": "4.11.0",
+  "kind": "local-correctness-only-not-performance",
+  "startup_prepared_jobs": 76,
+  "startup_fresh_jobs": 76,
+  "startup_each_samples": 5,
+  "startup_each_warmups": 1,
+  "rc_cases": 18,
+  "expanded_workload_audit": {
+    "jobs": 141,
+    "measured": 141,
+    "warmups": 0,
+    "summaries": "all fields exactly recomputed",
+    "correctness": "all samples passed frozen output/fixture oracles",
+    "raw_sha256": "30f983b70d8741f3f6cd80b29ad1e32e19838bf2dfdc5300be9266ae656611cb"
+  },
+  "receipts": {
+    "rc-certification.json": {
+      "sha256": "6324d8023ede37efe9f71f3e586cc241e6e939267ffbc044ab16bdd43687ada5",
+      "path": "/tmp/legacy-refresh-7f7e487/rc-certification.json"
+    },
+    "shell-repeated.json": {
+      "sha256": "cbdb06b2f340dc8c3114dfc1977feb03c6e45a6c94d426139469b49d5050cf93",
+      "path": "/tmp/legacy-refresh-7f7e487/shell-repeated.json"
+    },
+    "shell-fresh.json": {
+      "sha256": "fc63968ae3a034d48aa3f4248ebbfa96ccd54ec51dc9c85a73fa095e314cf790",
+      "path": "/tmp/legacy-refresh-7f7e487/shell-fresh.json"
+    },
+    "shell-workloads.json": {
+      "sha256": "30f983b70d8741f3f6cd80b29ad1e32e19838bf2dfdc5300be9266ae656611cb",
+      "path": "/tmp/legacy-refresh-7f7e487/shell-workloads.json"
+    },
+    "shell-workload-validation.json": {
+      "sha256": "0c3b06c6dda86335be24f797b1f92a3c9bd0f64f0d7e289e99a6bea1aa768997",
+      "path": "/tmp/legacy-refresh-7f7e487/shell-workload-validation.json"
+    }
+  },
+  "tests": "measurement3 and workload8 pass",
+  "official_host_gates": "required beforemeasurement"
+}

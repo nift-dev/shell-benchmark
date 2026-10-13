@@ -1,0 +1,29 @@
+{
+  "commands": [
+    "taskset -c 0 python3 scripts/verify_rc.py --nift /opt/campaign/tools/bin/nift --output /opt/campaign/evidence/rc-before.json",
+    "taskset -c 0 python3 scripts/benchmark.py --nift /opt/campaign/tools/bin/nift --samples 100 --work-samples 10 --warmups 3 --output /opt/campaign/evidence/shell-repeated.json",
+    "taskset -c 0 python3 scripts/benchmark.py --nift /opt/campaign/tools/bin/nift --samples 30 --work-samples 10 --warmups 3 --state application-cold --output /opt/campaign/evidence/shell-application-cold.json",
+    "taskset -c 0 python3 scripts/workload_campaign.py --nift /opt/campaign/tools/bin/nift --output /opt/campaign/evidence/shell-workloads.json",
+    "python3 scripts/validate_workloads.py --input /opt/campaign/evidence/shell-workloads.json --output /opt/campaign/evidence/workload-validation.json",
+    "taskset -c 0 python3 scripts/verify_rc.py --nift /opt/campaign/tools/bin/nift --output /opt/campaign/evidence/rc-after.json"
+  ],
+  "comparators": {
+    "bash": "Ubuntu24.04 exact dpkg pin; previous5.2.21",
+    "zsh": "Ubuntu24.04 exact dpkg pin; previous5.9",
+    "fish": "4.9.3",
+    "nu": "0.116.1"
+  },
+  "baseline": "20261010-v4100-shell-expanded; startup100 prepared/30fresh,work10,warmup3; expanded cases10+2 or heavy5+1",
+  "gates": [
+    "test_measurement.py",
+    "test_workloads.py",
+    "complete workload smoke --smoke",
+    "verify_rc.py before/after",
+    "summarize.py startup both boundaries",
+    "validate_workloads.py sources,oracle,fixture,distractor metadata and full distributions"
+  ],
+  "candidate_source_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "core_build": "fresh clean detached clone; make -j2; make install PREFIX=/opt/campaign/tools; record actual compiler/default flags/version/binary+library hashes",
+  "measurement_boundary": "existing frozen harness; singleCPU0; uncontrolled OS cache; keep childRSS versus treeRSS limitation explicit",
+  "status": "ready for source candidate; installed comparator identities and complete correctness pilot pending"
+}
